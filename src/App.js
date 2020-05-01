@@ -1,14 +1,14 @@
 import React from 'react';
-import logo from './logo.svg';
+import lemmy from './lemmy.png';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <img src={lemmy} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Shave Dave 2020
         </p>
         <a
           className="App-link"
