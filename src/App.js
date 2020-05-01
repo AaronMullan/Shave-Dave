@@ -1,18 +1,23 @@
-import React from 'react';
-import lemmy from './Lemmy.png';
-import './App.css';
+import React from "react";
+import lemmy from "./Lemmy.png";
+import "./App.css";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={lemmy} className="App-logo" alt="logo" />
-        <p>
-          Shave Dave 2020
-        </p>
         <a
           className="App-link"
-          href="https://www.bmorerestaurantrelief.org/"
+          href="https://www.bmorerestaurantrelief.org/donate"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src={lemmy} className="App-logo" alt="logo" />
+        </a>
+        <h3>Shave Dave 2020</h3>
+        <a
+          className="App-link"
+          href="https://www.bmorerestaurantrelief.org/donate"
           target="_blank"
           rel="noopener noreferrer"
         >
