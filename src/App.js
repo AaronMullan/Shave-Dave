@@ -1,5 +1,5 @@
 import React from 'react';
-import lemmy from './lemmy.png';
+import lemmy from './Lemmy.png';
 import './App.css';
 
 function App() {
