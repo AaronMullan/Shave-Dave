@@ -81,6 +81,7 @@
 body {
   height: 80vh;
   display: flex;
+  align-items: flex-start;
   justify-content: space-around;
 }
 
@@ -88,6 +89,7 @@ body {
   color: #ed1b24;
   width: 40%;
   display: flex;
+  align-items: flex-start;
   justify-content: center;
 }
 
