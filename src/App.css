@@ -4,11 +4,67 @@
 }
 
 .Face-style {
-  height: 40vmin;
+  width: 100%;
 }
 .Matchup {
   display: inline-flex;
-  width: 40px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;;
+  background-color: lightgrey;
+  border-radius: .2em;
+}
+#QuarterFinalA {
+  grid-column: 1;
+  grid-row: 1/6;
+}
+#QuarterFinalB {
+  grid-column: 1;
+  grid-row: 7/12;
+}
+#QuarterFinalC {
+  grid-column: 1;
+  grid-row: 13/18;
+}
+#QuarterFinalD {
+  grid-column: 1;
+  grid-row: 19/24;
+}
+#QuarterFinalE {
+  grid-column: 5;
+  grid-row: 1/6;
+}
+#QuarterFinalF {
+  grid-column: 5;
+  grid-row: 7/12;
+}
+#QuarterFinalG {
+  grid-column: 5;
+  grid-row: 13/18;
+}
+#QuarterFinalH {
+  grid-column: 5;
+  grid-row: 19/24;
+}
+#SemiFinalA {
+  grid-column: 2;
+  grid-row: 4/10;
+}
+#SemiFinalB {
+  grid-column: 2;
+  grid-row: 16/22;
+}
+#SemiFinalC {
+  grid-column: 4;
+  grid-row: 4/10;
+}
+#SemiFinalD {
+  grid-column: 4;
+  grid-row: 16/22;
+}
+#Final {
+  grid-column:3;
+  grid-row: 10/16;
 }
 
 .App-header {
@@ -30,16 +86,36 @@ body {
 
 .App-link {
   color: #ed1b24;
+  width: 40%;
+  display: flex;
+  justify-content: center;
 }
 
 .Container {
-  width: 40vw;
-  background-color: green;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  width: 90vw;
+  height: 91vh;
+  background-color: #B5B6B8;
+  display: grid;
+  justify-content: space-around;
+  gap: 5px;
+  border-radius: .2em;
+}
+
+.Container .col {
+  width: 10%;
 }
 
 footer {
   background-color: #FBD872;
+  display: flex;
+  justify-items: center;
+  width: 90vw;
+  position:absolute;
+  bottom:0;
+  height: 3vh;
+  border-radius: .3em .3em 0 0;
+}
+
+a {
+  color: green;
 }

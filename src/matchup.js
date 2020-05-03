@@ -3,12 +3,12 @@ import FaceStyle from './facestyle.js';
 
 function Matchup(props){
   return (
-    <div className="Matchup">
+    <div className="Matchup" id={props.id}>
     <FaceStyle 
       href={props.hometeam.href}
       image={props.hometeam.image}
     />
-    <h3>vs.</h3>
+    <p>vs.</p>
     <FaceStyle 
       href={props.awayteam.href}
       image={props.awayteam.image}
