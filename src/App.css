@@ -99,6 +99,7 @@ body {
   justify-content: space-around;
   gap: 5px;
   border-radius: .2em;
+  overflow: auto;
 }
 
 .Container .col {
