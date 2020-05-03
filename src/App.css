@@ -1,6 +1,9 @@
 .App {
   text-align: center;
   color: FFD520;
+  display: grid;
+  grid-template-rows: 1fr auto;
+
 }
 
 .Face-style {
@@ -113,9 +116,10 @@ footer {
   display: flex;
   justify-items: center;
   width: 90vw;
-  position:absolute;
   bottom:0;
   height: 3vh;
+  grid-row-start: 2;
+  grid-row-end: 3;
   border-radius: .3em .3em 0 0;
 }
 
