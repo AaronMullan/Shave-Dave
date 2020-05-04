@@ -1,5 +1,6 @@
 import React from "react";
 import Matchup from './matchup.js';
+import Final from './matchup-final.js'
 import teams from './teams/teams.js';
 import "./App.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -17,15 +18,9 @@ function App() {
           <Matchup hometeam={teams.ronswanson} awayteam={teams.lemmy} id="QuarterFinalB"/>
           <Matchup hometeam={teams.ronswanson} awayteam={teams.lemmy} id="QuarterFinalC"/>
           <Matchup hometeam={teams.ronswanson} awayteam={teams.lemmy} id="QuarterFinalD"/>
-          <Matchup hometeam={teams.ronswanson} awayteam={teams.lemmy} id="QuarterFinalE"/>
-          <Matchup hometeam={teams.ronswanson} awayteam={teams.lemmy} id="QuarterFinalF"/>
-          <Matchup hometeam={teams.ronswanson} awayteam={teams.lemmy} id="QuarterFinalG"/>
-          <Matchup hometeam={teams.ronswanson} awayteam={teams.lemmy} id="QuarterFinalH"/>
           <Matchup hometeam={teams.ronswanson} awayteam={teams.lemmy} id="SemiFinalA"/>
           <Matchup hometeam={teams.ronswanson} awayteam={teams.lemmy} id="SemiFinalB"/>
-          <Matchup hometeam={teams.ronswanson} awayteam={teams.lemmy} id="SemiFinalC"/>
-          <Matchup hometeam={teams.ronswanson} awayteam={teams.lemmy} id="SemiFinalD"/>
-          <Matchup hometeam={teams.ronswanson} awayteam={teams.lemmy} id="Final"/>
+          <Final hometeam={teams.ronswanson} awayteam={teams.lemmy} wildcard={teams.cleanshaven}id="Final"/>
         </div>
         </main>
       </body>
