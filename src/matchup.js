@@ -7,11 +7,13 @@ function Matchup(props){
     <FaceStyle 
       href={props.hometeam.href}
       image={props.hometeam.image}
+      dollars={props.hometeam.dollars}
     />
-    <p>vs.</p>
+ 
     <FaceStyle 
       href={props.awayteam.href}
       image={props.awayteam.image}
+      dollars={props.awayteam.dollars}
     />
     </div>
   )
