@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-      <h1>Shave Dave 2020</h1>
+      <h2>Shave Dave 2020</h2>
       </header>
       <body>
       <main role='main'>

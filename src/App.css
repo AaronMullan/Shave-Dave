@@ -2,8 +2,7 @@
   text-align: center;
   color: FFD520;
   display: grid;
-  grid-template-rows: 1fr auto;
-
+  overflow: auto;
 }
 
 .Face-style {
@@ -71,6 +70,8 @@
 }
 
 .App-header {
+  grid-row-start: 1;
+  grid-row-end: 2;
   background-color: #df4400 ;
   display: flex;
   flex-direction: column;
@@ -98,7 +99,7 @@ body {
 }
 
 .Container {
-  width: 90vw;
+  width: 95vw;
   height: 91vh;
   background-color: #B5B6B8;
   display: grid;
@@ -106,6 +107,8 @@ body {
   gap: 5px;
   border-radius: .2em;
   overflow: auto;
+  grid-row-start: 2;
+  grid-row-end: 3;
 }
 
 .Container .col {
@@ -116,7 +119,7 @@ footer {
   background-color: #FBD872;
   display: flex;
   justify-items: center;
-  width: 90vw;
+  width: 95vw;
   bottom:0;
   height: 50px;
   grid-row-start: 3;
