@@ -13,6 +13,11 @@ const teams = {
       image: 'assets/cleanshaven.png',
       href: 'https://www.bmorerestaurantrelief.org/donate',
       dollars: '1500'
+    },
+    blankbeard: {
+      image: 'assets/blankbeard.jpeg',
+      href: 'https://www.bmorerestaurantrelief.org/donate',
+      dollars: '5'
     }
 }
 export default teams;
