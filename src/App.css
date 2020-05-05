@@ -84,7 +84,7 @@
   border-radius: 0 0 .2em .2em;
 }
 
-body {
+.body {
   height: 80vh;
   display: flex;
   align-items: flex-start;
