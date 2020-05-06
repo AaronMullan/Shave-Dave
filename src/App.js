@@ -1,8 +1,11 @@
 import React, { useState, useEffect } from "react";
+import dotenv from 'dotenv'
 import Matchup from './matchup.js';
 import Final from './matchup-final.js'
 import "./App.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
+
+const apiKey = process.env.API_KEY;
 
 function App() {
   const [isLoaded, setIsLoaded] = useState(false);
