@@ -3,6 +3,10 @@
   color: FFD520;
   display: grid;
   overflow: auto;
+  background-image: url("/assets/Shave_Dave_20-BestOf_Background-01.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .Face-style {
@@ -30,7 +34,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: white;
   border-radius: .2em;
 }
 .Wildcard {
@@ -103,7 +106,6 @@
 .Container {
   width: 95vw;
   height: 91vh;
-  background-color: #72ccdc;
   display: grid;
   grid-template-columns: 2fr 2fr 3fr 2fr 2fr;
   justify-content: space-around;
@@ -112,6 +114,7 @@
   overflow: auto;
   grid-row-start: 2;
   grid-row-end: 3;
+  background-image: url("/public/assets/Shave_Dave_20-BestOf_Background-01.svg")
 }
 
 .Container .col {
