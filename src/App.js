@@ -1,17 +1,18 @@
 import React, { useState, useEffect } from "react";
-import dotenv from 'dotenv'
 import Matchup from './matchup.js';
 import Final from './matchup-final.js'
 import "./App.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import logo from './pix/Shave_Dave_20-BestOf_FINAL-Transparent.png'
 
 const apiKey = process.env.API_KEY;
+
 
 function App() {
   const [isLoaded, setIsLoaded] = useState(false);
   const [scores, setScores] = useState([]);
   useEffect(() => {
-    fetch("https://sheets.googleapis.com/v4/spreadsheets/1aUpL55gR8X3l6X5Ucjx5BTiN6pPunnZW0T8YqPjd3Jc/values/Sheet1!C2:K3?key=AIzaSyBgawbsVXzM8xSh4leGzfSTeNOhQjyzCMs")
+    fetch("https://sheets.googleapis.com/v4/spreadsheets/1aUpL55gR8X3l6X5Ucjx5BTiN6pPunnZW0T8YqPjd3Jc/values/Sheet1!C2:L5?key=AIzaSyBgawbsVXzM8xSh4leGzfSTeNOhQjyzCMs")
       .then(res => res.json())
       .then(
         (result) => {
@@ -79,7 +80,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-      <h2>Shave Dave 2020</h2>
+      <img src={logo} alt="Shave Dave Covid-19 Relief"/>
       </header>
       <div className="body">
       <main role='main'>
@@ -91,6 +92,7 @@ function App() {
           <Matchup hometeam={teams.blankbeard} awayteam={teams.blankbeard} id="SemiFinalA"/>
           <Matchup hometeam={teams.blankbeard} awayteam={teams.blankbeard} id="SemiFinalB"/>
           <Final hometeam={teams.ron} awayteam={teams.lemmy} wildcard={teams.cleanshaven}id="Final"/>
+          <h3 id="total" >Total Raised: {scores[9]}</h3>
         </div>
         </main>
       </div>

@@ -3,23 +3,26 @@
   color: FFD520;
   display: grid;
   overflow: auto;
+  background-image: url("/assets/Shave_Dave_20-BestOf_Background-01.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .Face-style {
   width: 100%;
   display: flex;
   flex-direction: column;
+ 
 }
 .Matchup {
   display: inline-flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #c0e7ef;
   border-radius: .2em;
 }
 .Face-style-container{
-  background-color: whitesmoke;
   display: grid;
   grid-column: 1fr;
   justify-items: center;
@@ -30,7 +33,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: white;
   border-radius: .2em;
 }
 .Wildcard {
@@ -68,20 +70,26 @@
 }
 #Final {
   grid-column:3;
-  grid-row: 4/10;
+  grid-row: 5/10;
+}
+#total {
+  grid-column:3;
+  grid-row: 5;
+  color: #fefefe;
 }
 
 .App-header {
+  height: 17vh;
   grid-row-start: 1;
   grid-row-end: 2;
-  background-color: #fefdfd ;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: start;
   font-size: calc(10px + 2vmin);
   color: 	#000000;
   border-radius: 0 0 .2em .2em;
+  overflow: visable;
 }
 
 .body {
@@ -103,7 +111,6 @@
 .Container {
   width: 95vw;
   height: 91vh;
-  background-color: #72ccdc;
   display: grid;
   grid-template-columns: 2fr 2fr 3fr 2fr 2fr;
   justify-content: space-around;
@@ -112,6 +119,7 @@
   overflow: auto;
   grid-row-start: 2;
   grid-row-end: 3;
+  background-image: url("/public/assets/Shave_Dave_20-BestOf_Background-01.svg")
 }
 
 .Container .col {
