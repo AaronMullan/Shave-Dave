@@ -7,7 +7,12 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  justify-content: center;
 }
+.Header-image{
+  width: 50%;
+}
+
 
 .Face-style {
   width: 100%;
@@ -76,6 +81,7 @@
   grid-column:3;
   grid-row: 5;
   color: #fefefe;
+  font-size: calc(5px + 2vmin);
 }
 
 .App-header {
@@ -89,7 +95,9 @@
   font-size: calc(10px + 2vmin);
   color: 	#000000;
   border-radius: 0 0 .2em .2em;
-  overflow: visable;
+  overflow: visible;
+  width: 100%;
+  
 }
 
 .body {
@@ -98,11 +106,12 @@
   align-items: flex-start;
   justify-content: space-around;
   min-height: calc(100vh - 80px);
+  color: #fefefe;
 }
 
 .App-link {
   color: #ed1b24;
-  width: 40%;
+  width: 100%;
   display: flex;
   align-items: flex-start;
   justify-content: center;
@@ -116,7 +125,7 @@
   justify-content: space-around;
   gap: 5px;
   border-radius: .2em;
-  overflow: auto;
+  overflow: visible;
   grid-row-start: 2;
   grid-row-end: 3;
   background-image: url("/public/assets/Shave_Dave_20-BestOf_Background-01.svg")
@@ -139,5 +148,5 @@ footer {
 }
 
 a {
-  color: green;
+  color: #7affde;
 }
