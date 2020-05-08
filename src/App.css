@@ -7,20 +7,26 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  justify-content: center;
 }
-
+.Header-image{
+  width: 50%;
+}
+.dollars {
+  font-size: 2vw;
+}
 .Face-style {
   width: 100%;
   display: flex;
   flex-direction: column;
- 
 }
+
 .Matchup {
   display: inline-flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border-radius: .2em;
+ 
 }
 .Face-style-container{
   display: grid;
@@ -33,7 +39,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border-radius: .2em;
 }
 .Wildcard {
   display: flex;
@@ -47,26 +52,32 @@
 #QuarterFinalA {
   grid-column: 1;
   grid-row: 1/6;
+  border-right: .5vw solid #c2e7ef;
 }
 #QuarterFinalB {
   grid-column: 1;
   grid-row: 7/12;
+  border-right: .5vw solid #c2e7ef;
 }
 #QuarterFinalC {
   grid-column: 5;
   grid-row: 1/6;
+  border-left: .5vw solid #c2e7ef;
 }
 #QuarterFinalD {
   grid-column: 5;
   grid-row: 7/12;
+  border-left: .5vw solid #c2e7ef;
 }
 #SemiFinalA {
   grid-column: 2;
   grid-row: 4/10;
+  border-right: .5vw solid #c2e7ef;
 }
 #SemiFinalB {
   grid-column: 4;
   grid-row: 4/10;
+  border-left: .5vw solid #c2e7ef;
 }
 #Final {
   grid-column:3;
@@ -76,6 +87,7 @@
   grid-column:3;
   grid-row: 5;
   color: #fefefe;
+  font-size: max(min(3vw, .25em), 1em);
 }
 
 .App-header {
@@ -85,11 +97,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: start;
+  justify-content: flex-start;
   font-size: calc(10px + 2vmin);
   color: 	#000000;
   border-radius: 0 0 .2em .2em;
-  overflow: visable;
+  overflow: visible;
+  width: 100%;
+  
 }
 
 .body {
@@ -98,25 +112,28 @@
   align-items: flex-start;
   justify-content: space-around;
   min-height: calc(100vh - 80px);
+  color: #fefefe;
 }
 
 .App-link {
   color: #ed1b24;
-  width: 40%;
+  width: 100%;
   display: flex;
   align-items: flex-start;
   justify-content: center;
+  margin: -20%;
 }
 
 .Container {
   width: 95vw;
   height: 91vh;
   display: grid;
-  grid-template-columns: 2fr 2fr 3fr 2fr 2fr;
+  grid-template-columns: 2fr 2fr 2fr 2fr 2fr;
+  grid-template-rows: repeat(12) 1fr;
   justify-content: space-around;
   gap: 5px;
   border-radius: .2em;
-  overflow: auto;
+  overflow: visible;
   grid-row-start: 2;
   grid-row-end: 3;
   background-image: url("/public/assets/Shave_Dave_20-BestOf_Background-01.svg")
@@ -139,5 +156,5 @@ footer {
 }
 
 a {
-  color: green;
+  color: #7affde;
 }
