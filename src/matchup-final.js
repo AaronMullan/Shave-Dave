@@ -4,7 +4,7 @@ import FaceStyle from "./facestyle.js";
 function Final(props) {
   if (!props.wildcard)
     return (
-      <div className="Matchup" id={props.id}>
+      <div className="Final" id={props.id}>
       <FaceStyle 
         href={props.hometeam.href}
         image={props.hometeam.image}

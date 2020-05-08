@@ -5,7 +5,7 @@ import "./App.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import logo from './pix/Shave_Dave_20-BestOf_FINAL-Transparent.png'
 
-const apiKey = process.env.API_KEY;
+// const apiKey = process.env.API_KEY;
 
 
 function App() {
@@ -69,7 +69,7 @@ function App() {
       dollars: scores[8]
     },
     blankbeard: {
-      image: 'assets/blankbeard.jpeg',
+      image: 'assets/Shave_Dave_20-BestOf_BEARDS-11.png',
       href: 'https://www.bmorerestaurantrelief.org/donate',
       dollars: ''
     }
@@ -91,15 +91,15 @@ function App() {
           <Matchup hometeam={teams.chester} awayteam={teams.white} id="QuarterFinalB"/>
           <Matchup hometeam={teams.ron} awayteam={teams.abe} id="QuarterFinalC"/>
           <Matchup hometeam={teams.twoface} awayteam={teams.lemmy} id="QuarterFinalD"/>
-          <Matchup hometeam={teams.monkeytail} awayteam={teams.chester} id="SemiFinalA"/>
-          <Matchup hometeam={teams.abe} awayteam={teams.twoface} id="SemiFinalB"/>
-          <Final hometeam={teams.monkeytail} awayteam={teams.twoface} wildcard={teams.cleanshaven}id="Final"/>
+          <Matchup hometeam={teams.blankbeard} awayteam={teams.blankbeard} id="SemiFinalA"/>
+          <Matchup hometeam={teams.blankbeard} awayteam={teams.blankbeard} id="SemiFinalB"/>
+          <Final hometeam={teams.blankbeard} awayteam={teams.blankbeard} wildcard={''}id="Final"/>
           <h3 id="total" >Total Raised: ${scores[9]}</h3>
         </div>
         </main>
       </div>
       
-      <footer>
+      {/* <footer>
         <a
           href="https://www.bmorerestaurantrelief.org/donate"
           target="_blank"
@@ -107,7 +107,7 @@ function App() {
         >
           Sponsor info goes in the footer
         </a>
-      </footer>
+      </footer> */}
     </div>
   );
 }

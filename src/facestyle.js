@@ -12,8 +12,8 @@ function FaceStyle(props) {
         <img src={props.image} className="Face-style" alt="logo" />
         <br />
       </a>
+        <div className="dollars">$ {props.dollars}</div>
       <div>
-        <p>$ {props.dollars}</p>
       </div>
     </div>
   );
