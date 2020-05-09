@@ -3,7 +3,7 @@ import Matchup from './matchup.js';
 import Final from './matchup-final.js'
 import "./App.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import logo from './pix/Shave_Dave_20-BestOf_FINAL-Transparent.png'
+import logo from './pix/Shave_Dave_20-BestOf_LOGO-BLUE.png'
 
 // const apiKey = process.env.API_KEY;
 
@@ -21,7 +21,6 @@ function App() {
         },
       )
   }, [])
-  console.log(scores);
   const teams = {
     monkeytail: {
       image: 'assets/Shave_Dave_20-BestOf_BEARDS-02.png',
@@ -81,7 +80,7 @@ function App() {
     <div className="App">
       <header className="App-header">
       
-      <img src={logo} alt="Shave Dave Covid-19 Relief" className="Header-image" fluid/>
+      <img src={logo} alt="Shave Dave Covid-19 Relief" className="Header-image"/>
     
       </header>
       <div className="body">
@@ -94,7 +93,19 @@ function App() {
           <Matchup hometeam={teams.blankbeard} awayteam={teams.blankbeard} id="SemiFinalA"/>
           <Matchup hometeam={teams.blankbeard} awayteam={teams.blankbeard} id="SemiFinalB"/>
           <Final hometeam={teams.blankbeard} awayteam={teams.blankbeard} wildcard={''}id="Final"/>
-          <h3 id="total" >Total Raised: ${scores[9]}</h3>
+          {/* <h3 id="total" >Total Raised: ${scores[9]}</h3> */}
+          <div className="QuarterARight"></div>
+          <div className="QuarterAOutput"></div>
+          <div className="QuarterBRight"></div>
+          <div className="QuarterBOutput"></div>
+          <div className="QuarterCLeft"></div>
+          <div className="QuarterCOutput"></div>
+          <div className="QuarterDLeft"></div>
+          <div className="QuarterDOutput"></div>
+          <div className="SemiARight"></div>
+          <div className="SemiAOutput"></div>
+          <div className="SemiBLeft"></div>
+          <div className="SemiBOutput"></div>
         </div>
         </main>
       </div>
