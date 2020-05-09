@@ -95,6 +95,7 @@ function App() {
           <Matchup hometeam={teams.blankbeard} awayteam={teams.blankbeard} id="SemiFinalB"/>
           <Final hometeam={teams.blankbeard} awayteam={teams.blankbeard} wildcard={''}id="Final"/>
           {/* <h3 id="total" >Total Raised: ${scores[9]}</h3> */}
+
           <div className="QuarterARight"></div>
           <div className="QuarterAOutput"></div>
           <div className="QuarterBRight"></div>
