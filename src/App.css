@@ -1,8 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
+.stylishbutton {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #6fccdd;
+  color: #fefefe;
+  border-radius: .5em;
+  border: .4vw solid #c2e7ef;
+  grid-row: 15/16;
+  grid-column: 7/10;
+  font-size: calc(10px + 6 * ((100vw - 320px) / 680));
+  padding: 2vw;
+}
 .App {
   text-align: center;
-  color: FFD520;
   display: grid;
   overflow: auto;
   background-image: url("/assets/Shave_Dave_20-BestOf_Background-01.svg");
@@ -11,10 +21,11 @@
   background-size: cover;
   justify-content: center;
   font-family: 'Montserrat', sans-serif;
+  padding-bottom: 10px;
 
 }
 .Header-image {
-  width: 35%;
+  width: 25%;
   min-width: 200px;
   max-width: 400px;
 }
@@ -202,7 +213,7 @@
 }
 #Final {
   grid-column: 7/10;
-  grid-row: 5/11;
+  grid-row: 6/11;
   display: flex;
   justify-content: space-around;
   z-index: 1;
@@ -224,7 +235,6 @@
   align-items: center;
   justify-content: flex-start;
   font-size: calc(10px + 2vmin);
-  color: #000000;
   border-radius: 0 0 0.2em 0.2em;
   overflow: visible;
   width: 100%;

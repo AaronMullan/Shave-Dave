@@ -3,7 +3,8 @@ import Matchup from './matchup.js';
 import Final from './matchup-final.js'
 import "./App.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import logo from './pix/Shave_Dave_20-BestOf_LOGO-BLUE.png'
+import logo from './pix/Shave_Dave_20-BestOf_LOGO-BLUE.png';
+import AboutPage from'./about-page.js';
 
 // const apiKey = process.env.API_KEY;
 
@@ -106,6 +107,7 @@ function App() {
           <div className="SemiAOutput"></div>
           <div className="SemiBLeft"></div>
           <div className="SemiBOutput"></div>
+          <AboutPage className="stylishbutton"/>
         </div>
         </main>
       </div>
