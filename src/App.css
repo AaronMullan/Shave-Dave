@@ -299,7 +299,7 @@ a {
     justify-content: space-between;
     z-index: 1;
     min-height: 40vh;
-    padding-bottom: 0;
+    padding-bottom: 1vh;
     margin-top: 1vh;
   }
   
