@@ -23,10 +23,25 @@
   font-family: 'Montserrat', sans-serif;
   padding-bottom: 10px;
 }
+.App-header {
+  height: 17vh;
+  grid-row: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: calc(10px + 2vmin);
+  border-radius: 0 0 0.2em 0.2em;
+  overflow: visible;
+  width: 100%;
+  max-width: 1050px;
+  background-attachment: scroll;
+}
 .Header-image {
   width: 25%;
-  min-width: 200px;
+  min-width: 100px;
   max-width: 400px;
+  height: auto;
 }
 .dollars {
   font-size: calc(8px + 6 * ((100vw - 320px) / 680));
@@ -232,20 +247,7 @@
   font-size: max(min(3vw, 0.25em), 1em);
 }
 
-.App-header {
-  height: 17vh;
-  grid-row-start: 1;
-  grid-row-end: 2;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  font-size: calc(10px + 2vmin);
-  border-radius: 0 0 0.2em 0.2em;
-  overflow: visible;
-  width: 100%;
-  max-width: 1050px;
-}
+
 
 .body {
   height: 80vh;
@@ -285,7 +287,7 @@ a {
   color: #7affde;
 }
 
-@media (min-width: 725px) {
+@media (min-width: 550px) {
   .Header-image {
     width: 25%;
     min-width: 200px;
@@ -393,5 +395,15 @@ a {
     margin-top: -3vh;
     margin-bottom: 1vh;
     z-index: 1;
+  }
+  .stylishbutton {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #6fccdd;
+    color: #fefefe;
+    border-radius: .5em;
+    border: .4vw solid #c2e7ef;
+    grid-row: 16/17;
+    grid-column: 7/10;
+    font-size: calc(8px + 6 * ((100vw - 320px) / 680)); 
   }
 }
