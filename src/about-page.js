@@ -10,7 +10,7 @@ function AboutPage() {
 
   return (
     <>
-      <button onClick={handleShow} class="stylishbutton">
+      <button onClick={handleShow} className="stylishbutton">
         How to Donate
       </button>
 
