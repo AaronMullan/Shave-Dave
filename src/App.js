@@ -89,7 +89,7 @@ function App() {
         <div className="body">
           <main role="main">
             <div className="Container">
-              <MatchupModal
+              <Matchup
                 hometeam={teams.monkeytail}
                 awayteam={teams.porn}
                 id="QuarterFinalA"

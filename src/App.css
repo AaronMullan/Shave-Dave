@@ -10,6 +10,17 @@
   justify-content: space-around;
   align-items: center;
 }
+.MatchupModal {
+  justify-content: center;
+}
+.MatchupModal p {
+  font-size: large;
+  padding-top: 3vh;
+}
+.MatchupModal h3 {
+  display: flex;
+  justify-content: center;
+}
 .stylishbutton {
   font-family: 'Montserrat', sans-serif;
   background-color: #6fccdd;
@@ -18,6 +29,14 @@
   border: .4vw solid #c2e7ef;
   font-size: calc(10px + 6 * ((100vw - 320px) / 680));
   padding: 2vw;
+}
+.modal-content {
+  background-image: url("/assets/Shave_Dave_20-BestOf_Background-01.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-items: center;
+  color: #fefefe;
 }
 
 #fblogo {
