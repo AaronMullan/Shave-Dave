@@ -108,9 +108,14 @@ function App() {
           <div className="SemiAOutput"></div>
           <div className="SemiBLeft"></div>
           <div className="SemiBOutput"></div>
-          <AboutPage className="stylishbutton"/>
         </div>
         </main>
+        <div className="Footer">
+        <AboutPage className="stylishbutton"/>
+        <a>
+          <img id="fblogo" src="/assets/f_logo_RGB-White_100.png"></img>
+        </a>
+        </div>
       </div>
       
       {/* <footer>

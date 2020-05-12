@@ -1,15 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
+.body {
+  padding-bottom: 5vmax;
+  color:#fefefe;
+  min-height: calc(100vh - 80px);
+}
+.Footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
 .stylishbutton {
   font-family: 'Montserrat', sans-serif;
   background-color: #6fccdd;
   color: #fefefe;
   border-radius: .5em;
   border: .4vw solid #c2e7ef;
-  grid-row: 15/16;
-  grid-column: 7/10;
   font-size: calc(10px + 6 * ((100vw - 320px) / 680));
   padding: 2vw;
+}
+
+#fblogo {
+  max-height: 5vmax;
+  justify-self: right;
 }
 .App {
   text-align: center;
@@ -24,7 +37,7 @@
   padding-bottom: 10px;
 }
 .App-header {
-  height: 17vh;
+  height: 14vh;
   grid-row: 1;
   display: flex;
   flex-direction: column;
@@ -83,7 +96,7 @@
 .Container {
   width: 95vw;
   min-width: 300px;
-  height: 91vh;
+  height: 80vh;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -247,17 +260,6 @@
   font-size: max(min(3vw, 0.25em), 1em);
 }
 
-
-
-.body {
-  height: 80vh;
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-around;
-  min-height: calc(100vh - 80px);
-  color: #fefefe;
-}
-
 .App-link {
   color: #ed1b24;
   width: 100%;
@@ -269,18 +271,6 @@
 
 .Container .col {
   width: 10%;
-}
-
-footer {
-  background-color: #a3dce6;
-  display: flex;
-  justify-items: center;
-  width: 95vw;
-  bottom: 0;
-  height: 50px;
-  grid-row-start: 3;
-  grid-row-end: 4;
-  border-radius: 0.3em 0.3em 0 0;
 }
 
 a {
