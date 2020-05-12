@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import Matchup from "./matchup.js";
-import MatchupModal from "./matchup-modal.js"
 import Final from "./matchup-final.js";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
