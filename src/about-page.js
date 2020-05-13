@@ -29,15 +29,15 @@ HAMILTON-LAURAVILLE MAIN STREET<br/></b>
 </p>
 
 <p>
-1) Eight Beards begin Round 1. <br/>
-2) Go to shavedave.org OR click the link to DONATE directly to The Baltimore Restaurant Relief Fund.<br/>
-3) Decide your favorite Beard from the bracket match-ups for round 1, make note of the SEED Number<br/>
-4) Click the Donate button you will be re-directed to the BRRF site. <br/>
-5) Follow the Donation process- IMPORTANT - in the ADDITIONAL INFORMATION BOX on the Donate page you MUST RECORD the SEED Number of the beard to which you wish to pledge. THIS IS HOW WE WILL CALCULATE THE WINNERS of EACH ROUND.<br/>
-6) Follow us on FB and Instagram to track the excitement<br/>
-7) Round 2 Begins at 12:01PM on Tuesday, May 12. Four Beards move on and reset to zero. Round 2 pledging ends at NOON on Friday, May 15. The Final 2 Beards are now decided. * Follow the same donation instructions for each round.<br/>
-8) Pledge to push your Beard higher through the weekend until the Final Showdown SHAVE on Sunday, May 17.<br/>
-9) We will host a FB Live Variety Show accepting pledges up until 5:00PM SHARP then we will tally the final pledges and Kerry will Shave Dave LIVE. It’ll be a HOOT and all for a good cause.
+• Eight Beards begin Round 1. <br/>
+• Decide your favorite Beard from the bracket match-ups and make note of the SEED Number.<br/>
+• Click on one of the beard matchups for a detailed view.
+• Click on the detailed view; you will be re-directed to the BRRF site. <br/>
+• Follow the Donation process- IMPORTANT - in the ADDITIONAL INFORMATION BOX on the Donate page you MUST RECORD the SEED Number of the beard to which you wish to pledge. THIS IS HOW WE WILL CALCULATE THE WINNERS of EACH ROUND.<br/>
+• Follow us on FB and Instagram to track the excitement<br/>
+• Round 2 Begins at 12:01PM on Tuesday, May 12. Four Beards move on and reset to zero. Round 2 pledging ends at NOON on Friday, May 15. The Final 2 Beards are now decided. * Follow the same donation instructions for each round.<br/>
+• Pledge to push your Beard higher through the weekend until the Final Showdown SHAVE on Sunday, May 17.<br/>
+• We will host a FB Live Variety Show accepting pledges up until 5:00PM SHARP then we will tally the final pledges and Kerry will Shave Dave LIVE. It’ll be a HOOT and all for a good cause.
 </p>
 
 <p><b>Acknowledgements:</b>
