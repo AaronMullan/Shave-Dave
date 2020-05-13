@@ -31,7 +31,7 @@ HAMILTON-LAURAVILLE MAIN STREET<br/></b>
 <p>
 • Eight Beards begin Round 1. <br/>
 • Decide your favorite Beard from the bracket match-ups and make note of the SEED Number.<br/>
-• Click on one of the beard matchups for a detailed view.
+• Click on one of the beard matchups for a detailed view.<br/>
 • Click on the detailed view; you will be re-directed to the BRRF site. <br/>
 • Follow the Donation process- IMPORTANT - in the ADDITIONAL INFORMATION BOX on the Donate page you MUST RECORD the SEED Number of the beard to which you wish to pledge. THIS IS HOW WE WILL CALCULATE THE WINNERS of EACH ROUND.<br/>
 • Follow us on FB and Instagram to track the excitement<br/>
