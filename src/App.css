@@ -12,6 +12,7 @@
 }
 .MatchupModal {
   justify-content: center;
+  max-height: 80vh;
 }
 .MatchupModal p {
   font-size: large;
@@ -115,6 +116,7 @@
 .Container {
   width: 95vw;
   min-width: 300px;
+  min-height: 585px;
   height: 80vh;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
