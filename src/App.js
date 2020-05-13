@@ -11,6 +11,7 @@ import AboutPage from "./about-page.js";
 function App() {
   const [isLoaded, setIsLoaded] = useState(false);
   const [scores, setScores] = useState([]);
+  const [scoresToo, setScoresToo] = useState([]);
   useEffect(() => {
     fetch(
       "https://sheets.googleapis.com/v4/spreadsheets/1aUpL55gR8X3l6X5Ucjx5BTiN6pPunnZW0T8YqPjd3Jc/values/Sheet1!C2:L5?key=AIzaSyBgawbsVXzM8xSh4leGzfSTeNOhQjyzCMs"
@@ -19,6 +20,7 @@ function App() {
       .then((result) => {
         setIsLoaded(true);
         setScores(result.values[1]);
+        setScoresToo(result.values[2]);
       });
   }, []);
   const teams = {
@@ -73,6 +75,38 @@ function App() {
       dollars: "",
     },
   };
+  const teamstoo = {
+    monkeytail: {
+      image: "assets/Shave_Dave_20-BestOf_BEARDS-02.png",
+      href: "https://www.bmorerestaurantrelief.org/donate",
+      dollars: scoresToo[0],
+    },
+    abe: {
+      image: "assets/Shave_Dave_20-BestOf_BEARDS-05.png",
+      href: "https://www.bmorerestaurantrelief.org/donate",
+      dollars: scoresToo[3],
+    },
+    chester: {
+      image: "assets/Shave_Dave_20-BestOf_BEARDS-06.png",
+      href: "https://www.bmorerestaurantrelief.org/donate",
+      dollars: scoresToo[4],
+    },
+    twoface: {
+      image: "assets/Shave_Dave_20-BestOf_BEARDS-08.png",
+      href: "https://www.bmorerestaurantrelief.org/donate",
+      dollars: scoresToo[6],
+    },
+    cleanshaven: {
+      image: "assets/cleanshaven.png",
+      href: "https://www.bmorerestaurantrelief.org/donate",
+      dollars: scoresToo[8],
+    },
+    blankbeard: {
+      image: "assets/Shave_Dave_20-BestOf_BEARDS-11.png",
+      href: "https://www.bmorerestaurantrelief.org/donate",
+      dollars: "",
+    },
+  };
   if (!isLoaded) {
     return <div>...Loading...</div>;
   } else {
@@ -109,13 +143,13 @@ function App() {
                 id="QuarterFinalD"
               />
               <Matchup
-                hometeam={teams.blankbeard}
-                awayteam={teams.blankbeard}
+                hometeam={teamstoo.monkeytail}
+                awayteam={teamstoo.chester}
                 id="SemiFinalA"
               />
               <Matchup
-                hometeam={teams.blankbeard}
-                awayteam={teams.blankbeard}
+                hometeam={teamstoo.abe}
+                awayteam={teamstoo.twoface}
                 id="SemiFinalB"
               />
               <Final
@@ -141,12 +175,16 @@ function App() {
             </div>
           </main>
           <div className="Footer">
-          <a
+            <a
               href="https://www.instagram.com/shavedavebmore/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img id="fblogo" src="/assets/instagram-light-blue.png" alt="instagram link"></img>
+              <img
+                id="fblogo"
+                src="/assets/instagram-light-blue.png"
+                alt="instagram link"
+              ></img>
             </a>
             <AboutPage className="stylishbutton" />
             <a
@@ -154,7 +192,11 @@ function App() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img id="fblogo" src="/assets/facebook-light-blue.png" alt="facebook link"></img>
+              <img
+                id="fblogo"
+                src="/assets/facebook-light-blue.png"
+                alt="facebook link"
+              ></img>
             </a>
           </div>
         </div>
