@@ -158,7 +158,7 @@ function App() {
                 wildcard={""}
                 id="Final"
               />
-              {/* <h3 id="total" >Total Raised: ${scores[9]}</h3> */}
+              <h3 id="total" >Total Raised: ${scores[9]}</h3>
 
               <div className="QuarterARight"></div>
               <div className="QuarterAOutput"></div>

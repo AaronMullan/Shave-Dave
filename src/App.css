@@ -275,10 +275,10 @@
   padding-top: 7vh;
 }
 #total {
-  grid-column: 3;
-  grid-row: 5;
+  grid-column: 7/10;
+  grid-row: 13;
   color: #fefefe;
-  font-size: max(min(3vw, 0.25em), 1em);
+  font-size: calc(10px + 6 * ((100vw - 320px) / 680));;
 }
 
 .App-link {
