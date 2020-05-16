@@ -12,6 +12,7 @@ function App() {
   const [isLoaded, setIsLoaded] = useState(false);
   const [scores, setScores] = useState([]);
   const [scoresToo, setScoresToo] = useState([]);
+  const [scoresThree, setScoresThree] = useState([]);
   useEffect(() => {
     fetch(
       "https://sheets.googleapis.com/v4/spreadsheets/1aUpL55gR8X3l6X5Ucjx5BTiN6pPunnZW0T8YqPjd3Jc/values/Sheet1!C2:L5?key=AIzaSyBgawbsVXzM8xSh4leGzfSTeNOhQjyzCMs"
@@ -21,6 +22,7 @@ function App() {
         setIsLoaded(true);
         setScores(result.values[1]);
         setScoresToo(result.values[2]);
+        setScoresThree(result.values[3]);
       });
   }, []);
   const teams = {
@@ -107,6 +109,38 @@ function App() {
       dollars: "",
     },
   };
+  const teamsthree = {
+    monkeytail: {
+      image: "assets/Shave_Dave_20-BestOf_BEARDS-02.png",
+      href: "https://www.bmorerestaurantrelief.org/donate",
+      dollars: scoresThree[0],
+    },
+    abe: {
+      image: "assets/Shave_Dave_20-BestOf_BEARDS-05.png",
+      href: "https://www.bmorerestaurantrelief.org/donate",
+      dollars: scoresThree[3],
+    },
+    chester: {
+      image: "assets/Shave_Dave_20-BestOf_BEARDS-06.png",
+      href: "https://www.bmorerestaurantrelief.org/donate",
+      dollars: scoresThree[4],
+    },
+    twoface: {
+      image: "assets/Shave_Dave_20-BestOf_BEARDS-08.png",
+      href: "https://www.bmorerestaurantrelief.org/donate",
+      dollars: scoresThree[6],
+    },
+    cleanshaven: {
+      image: "assets/clean.png",
+      href: "https://www.bmorerestaurantrelief.org/donate",
+      dollars: scoresThree[8],
+    },
+    blankbeard: {
+      image: "assets/Shave_Dave_20-BestOf_BEARDS-11.png",
+      href: "https://www.bmorerestaurantrelief.org/donate",
+      dollars: "",
+    },
+  };
   if (!isLoaded) {
     return <div>...Loading...</div>;
   } else {
@@ -153,9 +187,9 @@ function App() {
                 id="SemiFinalB"
               />
               <Final
-                hometeam={teams.blankbeard}
-                awayteam={teams.blankbeard}
-                wildcard={""}
+                hometeam={teamsthree.chester}
+                awayteam={teamsthree.twoface}
+                wildcard={teamsthree.cleanshaven}
                 id="Final"
               />
               <h3 id="total" >Total Raised: ${scores[9]}</h3>

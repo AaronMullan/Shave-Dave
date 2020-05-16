@@ -82,8 +82,7 @@
 
 .Face-style {
   width: 90%;
-  display: flex;
-  flex-direction: column;
+ 
 }
 
 .Matchup {
@@ -99,10 +98,9 @@
   align-content: center;
 }
 .Final {
-  display: inline-flex;
+  display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-end;
 }
 .Wildcard {
   display: flex;
@@ -223,12 +221,7 @@
   border-top: .4vw solid #c2e7ef;
   border-bottom: .4vw solid #c2e7ef;
 }
-.SemiAOutput{
-  padding-bottom: 9vh;
-  grid-column: 6/8;
-  grid-row: 5/6;
-  border-bottom: .4vw solid #c2e7ef;
-}
+
 #SemiFinalA {
   grid-column: 4/7;
   grid-row: 4/14;
@@ -247,12 +240,7 @@
   border-top: .4vw solid #c2e7ef;
   border-bottom: .4vw solid #c2e7ef;
 }
-.SemiBOutput{
-  padding-bottom: 8.5vh;
-  grid-column: 9/11;
-  grid-row: 8/9;
-  border-bottom: .4vw solid #c2e7ef;
-}
+
 #SemiFinalB {
   grid-column: 10/13;
   grid-row: 4/14;
@@ -265,29 +253,25 @@
   padding-bottom: 3vh;
 }
 #Final {
-  grid-column: 7/10;
-  grid-row: 5/11;
-  display: flex;
-  justify-content: space-between;
+  grid-column: 6/11;
+  grid-row: 5/12;
+  display: grid;
+  justify-content: space-around;
   z-index: 1;
   min-height: 40vh;
-  padding-bottom: 9vh;
-  padding-top: 7vh;
+  padding-bottom: 1vh;
+  margin-top: 1vh;
 }
+#Final .Face-style {
+  max-width: 15vw;
+  min-width: 15vw;
+}
+
 #total {
   grid-column: 7/10;
   grid-row: 13;
   color: #fefefe;
   font-size: calc(10px + 6 * ((100vw - 320px) / 680));;
-}
-
-.App-link {
-  color: #ed1b24;
-  width: 100%;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  margin: -20%;
 }
 
 .Container .col {
@@ -301,14 +285,18 @@ a {
 @media (min-width: 565px) {
  
   #Final {
-    grid-column: 7/10;
+    grid-column: 6/11;
     grid-row: 5/12;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    justify-content: space-around;
     z-index: 1;
-    min-height: 25vh;
-    padding-bottom: 3vmin;
-    margin-top: 5vmin;
+    min-height: 40vh;
+    padding-bottom: 1vh;
+    margin-top: 1vh;
+  }
+  #Final .Face-style {
+    max-width: 15vw;
+    min-width: 15vw;
   }
   
   .QuarterBRight{
@@ -366,12 +354,7 @@ a {
     border-bottom: .4vw solid #c2e7ef;
 
   }
-  .SemiAOutput{
-    padding-bottom: 2vh;
-    grid-column: 6/8;
-    grid-row: 6/7;
-    border-bottom: .4vw solid #c2e7ef;
-  }
+  
   #SemiFinalA {
     grid-column: 4/7;
     grid-row: 4/13;
@@ -388,11 +371,6 @@ a {
     grid-row: 5/12;
     border-left: .4vw solid #c2e7ef;
     border-top: .4vw solid #c2e7ef;
-    border-bottom: .4vw solid #c2e7ef;
-  }
-  .SemiBOutput{
-    grid-column: 9/11;
-    grid-row: 10/11;
     border-bottom: .4vw solid #c2e7ef;
   }
   #SemiFinalB {
@@ -418,14 +396,24 @@ a {
   }
 }
 @media (min-width: 1025px) {
+  #total {
+    grid-column: 7/10;
+    grid-row: 15;
+    color: #fefefe;
+    font-size: calc(10px + 6 * ((100vw - 320px) / 680));;
+  }
   .Header-image {
     width: 25%;
     min-width: 200px;
     max-width: 40vh;
     max-height: 40vh;
   }
+  #Final .Face-style {
+    max-width: 15vw;
+    min-width: 0vw;
+  }
   #Final {
-    grid-column: 7/10;
+    grid-column: 6/11;
     grid-row: 5/12;
     display: flex;
     justify-content: space-between;
@@ -434,10 +422,11 @@ a {
     padding-bottom: 1vh;
     margin-top: 1vh;
   }
+
   
   .QuarterBRight{
     grid-column: 3/4;
-    grid-row: 11/15;
+    grid-row: 11/16;
     border-right: .4vw solid #c2e7ef;
     border-top: .4vw solid #c2e7ef;
     border-bottom: .4vw solid #c2e7ef;
@@ -458,7 +447,7 @@ a {
   }
   .QuarterDLeft{
     grid-column: 13/14;
-    grid-row: 11/15;
+    grid-row: 11/16;
     border-left: .4vw solid #c2e7ef;
     border-top: .4vw solid #c2e7ef;
     border-bottom: .4vw solid #c2e7ef;
@@ -486,12 +475,6 @@ a {
     border-bottom: .4vw solid #c2e7ef;
 
   }
-  .SemiAOutput{
-    padding-bottom: 2vh;
-    grid-column: 6/8;
-    grid-row: 6/7;
-    border-bottom: .4vw solid #c2e7ef;
-  }
   #SemiFinalA {
     grid-column: 4/7;
     grid-row: 4/14;
@@ -510,11 +493,7 @@ a {
     border-top: .4vw solid #c2e7ef;
     border-bottom: .4vw solid #c2e7ef;
   }
-  .SemiBOutput{
-    grid-column: 9/11;
-    grid-row: 10/11;
-    border-bottom: .4vw solid #c2e7ef;
-  }
+ 
   #SemiFinalB {
     grid-column: 10/13;
     grid-row: 4/14;
