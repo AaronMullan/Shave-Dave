@@ -82,8 +82,7 @@
 
 .Face-style {
   width: 90%;
-  display: flex;
-  flex-direction: column;
+ 
 }
 
 .Matchup {
@@ -99,10 +98,9 @@
   align-content: center;
 }
 .Final {
-  display: inline-flex;
+  display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-end;
 }
 .Wildcard {
   display: flex;
@@ -255,9 +253,9 @@
   padding-bottom: 3vh;
 }
 #Final {
-  grid-column: 5/11;
+  grid-column: 6/11;
   grid-row: 5/12;
-  display: flex;
+  display: grid;
   justify-content: space-around;
   z-index: 1;
   min-height: 40vh;
@@ -276,15 +274,6 @@
   font-size: calc(10px + 6 * ((100vw - 320px) / 680));;
 }
 
-.App-link {
-  color: #ed1b24;
-  width: 100%;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  margin: -20%;
-}
-
 .Container .col {
   width: 10%;
 }
@@ -296,9 +285,9 @@ a {
 @media (min-width: 565px) {
  
   #Final {
-    grid-column: 5/11;
+    grid-column: 6/11;
     grid-row: 5/12;
-    display: flex;
+    display: grid;
     justify-content: space-around;
     z-index: 1;
     min-height: 40vh;
@@ -407,14 +396,24 @@ a {
   }
 }
 @media (min-width: 1025px) {
+  #total {
+    grid-column: 7/10;
+    grid-row: 15;
+    color: #fefefe;
+    font-size: calc(10px + 6 * ((100vw - 320px) / 680));;
+  }
   .Header-image {
     width: 25%;
     min-width: 200px;
     max-width: 40vh;
     max-height: 40vh;
   }
+  #Final .Face-style {
+    max-width: 15vw;
+    min-width: 0vw;
+  }
   #Final {
-    grid-column: 5/11;
+    grid-column: 6/11;
     grid-row: 5/12;
     display: flex;
     justify-content: space-between;
@@ -423,14 +422,11 @@ a {
     padding-bottom: 1vh;
     margin-top: 1vh;
   }
-  #Final .Face-style {
-    max-width: 15vw;
-    min-width: 15vw;
-  }
+
   
   .QuarterBRight{
     grid-column: 3/4;
-    grid-row: 11/15;
+    grid-row: 11/16;
     border-right: .4vw solid #c2e7ef;
     border-top: .4vw solid #c2e7ef;
     border-bottom: .4vw solid #c2e7ef;
@@ -451,7 +447,7 @@ a {
   }
   .QuarterDLeft{
     grid-column: 13/14;
-    grid-row: 11/15;
+    grid-row: 11/16;
     border-left: .4vw solid #c2e7ef;
     border-top: .4vw solid #c2e7ef;
     border-bottom: .4vw solid #c2e7ef;
