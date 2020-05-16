@@ -11,8 +11,7 @@
   align-items: center;
 }
 .MatchupModal {
-  justify-content: center;
-  max-height: 80vh;
+  justify-items: center;
 }
 .MatchupModal p {
   font-size: large;
@@ -21,6 +20,9 @@
 .MatchupModal h3 {
   display: flex;
   justify-content: center;
+}
+.MatchupModal .Face-style{
+  justify-self: center;
 }
 .stylishbutton {
   font-family: 'Montserrat', sans-serif;
@@ -82,7 +84,6 @@
 
 .Face-style {
   width: 90%;
- 
 }
 
 .Matchup {
@@ -91,12 +92,7 @@
   align-items: center;
   justify-content: center;
 }
-.Face-style-container {
-  display: grid;
-  grid-column: 1fr;
-  justify-items: center;
-  align-content: center;
-}
+
 .Final {
   display: flex;
   flex-direction: column;
