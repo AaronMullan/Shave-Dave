@@ -16,13 +16,14 @@
 .MatchupModal p {
   font-size: large;
   padding-top: 3vh;
+  text-align: center;
 }
 .MatchupModal h3 {
   display: flex;
   justify-content: center;
 }
 .MatchupModal .Face-style{
-  justify-self: center;
+  padding-left: 10%;
 }
 .stylishbutton {
   font-family: 'Montserrat', sans-serif;
