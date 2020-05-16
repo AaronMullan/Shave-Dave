@@ -111,7 +111,7 @@
 .Container {
   width: 95vw;
   min-width: 300px;
-  min-height: 585px;
+  min-height: 80vw;
   height: 80vh;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
