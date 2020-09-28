@@ -189,7 +189,7 @@ function App() {
               <Final
                 hometeam={teamsthree.chester}
                 awayteam={teamsthree.twoface}
-                wildcard={teamsthree.cleanshaven}
+                // wildcard={teamsthree.cleanshaven}
                 id="Final"
               />
               <h3 id="total" >Total Raised: ${scores[9]}</h3>

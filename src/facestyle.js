@@ -1,7 +1,7 @@
 import React from "react";
 
 function FaceStyle(props) {
-  if(props.dollars)return (
+  if(props.dollars) return (
     <div className="Face-style-container">
       <a
         className="App-link"

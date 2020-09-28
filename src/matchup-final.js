@@ -11,9 +11,9 @@ function Final(props) {
   return (
     <>
     <div className="Final" id={props.id} onClick={handleShow}>
-      <div className="Wildcard">
+      {/* <div className="Wildcard">
       <FaceStyle image={props.wildcard.image} dollars={props.wildcard.dollars}/>
-      </div>
+      </div> */}
       <div className="Finalists">
       <FaceStyle image={props.hometeam.image} dollars={props.hometeam.dollars}/>
       <FaceStyle image={props.awayteam.image} dollars={props.awayteam.dollars}/>
@@ -26,11 +26,11 @@ function Final(props) {
     <Modal.Body>
       <div className="MatchupModal">
       <h3>Click to Donate</h3>
-      <FaceStyle class="shrinker"
+      {/* <FaceStyle class="shrinker"
           href={props.wildcard.href}
           image={props.wildcard.image}
           dollars={props.wildcard.dollars}
-        />
+        /> */}
         <FaceStyle class="shrinker"
           href={props.hometeam.href}
           image={props.hometeam.image}
