@@ -27,12 +27,12 @@
 }
 .stylishbutton {
   font-family: 'Montserrat', sans-serif;
-  background-color: #6fccdd;
+  background-color: lightblue;
   color: #fefefe;
   border-radius: .5em;
-  border: .4vw solid #c2e7ef;
+  border: .4vw solid #ffffff;
   font-size: calc(10px + 6 * ((100vw - 320px) / 680));
-  padding: 2vw;
+  padding: 2vw 4vw;
 }
 .modal-content {
   background-image: url("/assets/Shave_Dave_20-BestOf_Background-01.svg");
@@ -51,7 +51,7 @@
   text-align: center;
   display: grid;
   overflow: auto;
-  background-image: url("/assets/Shave_Dave_20-BestOf_Background-01.svg");
+  background-color: rgb(241,209,0);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -110,25 +110,9 @@
   flex-direction: row;
   justify-content: space-between;
 }
-.Container {
-  width: 95vw;
-  min-width: 300px;
-  min-height: 70vh;
-  height: 80vh;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  justify-content: space-around;
-  gap: 5px;
-  border-radius: 0.2em;
-  overflow: visible;
-  grid-row-start: 2;
-  grid-row-end: 3;
-  grid-column-gap: 0;
-  grid-row-gap: 0;
-  max-width: 1000px;
-  max-height: 400px;
-  background-image: url("/public/assets/Shave_Dave_20-BestOf_Background-01.svg");
+.announcement {
+  margin: 0 3vw;
+  padding: 10vh 0;
 }
 .QuarterARight{
   grid-column: 3/4;
@@ -293,7 +277,10 @@ a {
 }
 
 @media (min-width: 565px) {
- 
+  .announcement {
+    margin: 0 5vw;
+    padding: 10vh 0;
+  }
   #Final {
     grid-column: 6/11;
     grid-row: 5/12;
@@ -395,17 +382,22 @@ a {
     z-index: 1;
   }
   .stylishbutton {
-    font-family: 'Montserrat', sans-serif;
-    background-color: #6fccdd;
-    color: #fefefe;
-    border-radius: .5em;
-    border: .4vw solid #c2e7ef;
     grid-row: 16/17;
     grid-column: 7/10;
     font-size: calc(8px + 6 * ((100vw - 320px) / 680)); 
+    padding: 2vw 4vw;
   }
 }
 @media (min-width: 1025px) {
+  .body {
+    max-width:1025px;
+  }
+  .App-header {
+    height: fit-content
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
   #total {
     grid-column: 7/10;
     grid-row: 15;
@@ -506,13 +498,9 @@ a {
     z-index: 1;
   }
   .stylishbutton {
-    font-family: 'Montserrat', sans-serif;
-    background-color: #6fccdd;
-    color: #fefefe;
-    border-radius: .5em;
-    border: .4vw solid #c2e7ef;
     grid-row: 16/17;
     grid-column: 7/10;
     font-size: calc(8px + 6 * ((100vw - 320px) / 680)); 
+    padding: 2vh 2vw;
   }
 }

@@ -26,7 +26,7 @@ function Matchup(props){
 
     <Modal size="sm" show={show} onHide={handleClose}>
     <Modal.Header closeButton>
-      <Modal.Title>Shave Dave 2020 {props.id}</Modal.Title>
+      <Modal.Title>Shave Dave 2022 {props.id}</Modal.Title>
     </Modal.Header>
     <Modal.Body>
       <div className="MatchupModal">
