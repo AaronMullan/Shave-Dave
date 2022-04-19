@@ -1,6 +1,4 @@
-import React, { useState, useEffect } from "react";
-import Matchup from "./matchup.js";
-import Final from "./matchup-final.js";
+import React from "react";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import logo from "./pix/2022-logo-fullscreen.JPG";
