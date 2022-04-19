@@ -4,28 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import logo from "./pix/2022-logo-fullscreen.JPG";
 import AboutPage from "./about-page.js";
 
-// const apiKey = process.env.API_KEY;
-
 function App() {
-  // const [isLoaded, setIsLoaded] = useState(false);
-  // const [scores, setScores] = useState([]);
-  // const [scoresToo, setScoresToo] = useState([]);
-  // const [scoresThree, setScoresThree] = useState([]);
-  // useEffect(() => {
-  //   fetch(
-  //     "https://sheets.googleapis.com/v4/spreadsheets/1aUpL55gR8X3l6X5Ucjx5BTiN6pPunnZW0T8YqPjd3Jc/values/Sheet1!C2:L5?key=AIzaSyBgawbsVXzM8xSh4leGzfSTeNOhQjyzCMs"
-  //   )
-  //     .then((res) => res.json())
-  //     .then((result) => {
-  //       setIsLoaded(true);
-  //       setScores(result.values[1]);
-  //       setScoresToo(result.values[2]);
-  //       setScoresThree(result.values[3]);
-  //     });
-  // }, []);
-  // if (!isLoaded) {
-  //   return <div>...Loading...</div>;
-  // } else {
   return (
     <div className="App">
       <header className="App-header">
@@ -43,6 +22,8 @@ function App() {
             <h2>In Person at <b>The 4500 Lot</b> at Hamilton-Lauraville Main Street, Baltimore, MD, and <b>livestreamed</b> here and on social media</h2>
             <br></br>
             <h3>Join us for our 7th annual charity fund-raising show including live music and entertainment. At the end, we will SHAVE DAVE.  All proceeds go to Baltimore Sister City Odessa, the World Central Kitchen, and Hamilton-Lauraville Main Street.</h3>
+            <br></br>
+            <h1>#shavedave2022</h1>
           </div>
         </main>
         <div className="Footer">
