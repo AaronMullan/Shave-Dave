@@ -23,7 +23,7 @@ function AboutPage() {
           <p><b>PLEASE READ BELOW FOR THE DONATION PROCESS SO YOUR PLEDGE WILL BE COUNTED TOWARD THE BEARD YOU CHOOSE. THE BEARD WITH THE MOST CONTRIBUTIONS MOVES ON TO THE NEXT ROUND.<br />
             <br />
             ALL PROFITS WILL BE DONATED TO:<br />
-            BALTIMORE SISTER CITY ODESSA <br />
+            BALTIMORE SISTER CITY ODESA <br />
             and<br />
             HAMILTON-LAURAVILLE MAIN STREET<br /></b>
           </p>
@@ -50,7 +50,7 @@ function AboutPage() {
             The Cokers, Danny and Dana, Bandaloop’s OGs and keepers of the Bartenders flame.
             All of Bartenders EXTENDED FAMILY for their encouragement, love, and support. </p>
           <p><b>ABOUT: ShaveDave for Ukraine Relief</b><br /><br />
-            Shave Dave was created in 2011 by Dave Spence and Paul Hartman to raise money for Tsunami Relief in Japan. We subsequently ran several successful fundraisers for The National MS Society until Dave retired from the bar business in 2015. The COVID-19 Virus is forced the beard out of retirement in 2020. This year we will be raising money for the non-profit Baltimore Sister City Odessa to provide assistance to citizens of Ukraine so adversely affected by the crisis there. We will also be donating money to Hamilton-Lauraville Main Street. This year will be in person at The 4500 Lot at Hamilton-Lauraville Main Street and livestreamed here and on other social media platforms. The shave will be held on Saturday, June 25, 2022.
+            Shave Dave was created in 2011 by Dave Spence and Paul Hartman to raise money for Tsunami Relief in Japan. We subsequently ran several successful fundraisers for The National MS Society until Dave retired from the bar business in 2015. The COVID-19 Virus is forced the beard out of retirement in 2020. This year we will be raising money for the non-profit Baltimore Sister City Odesa to provide assistance to citizens of Ukraine so adversely affected by the crisis there. We will also be donating money to Hamilton-Lauraville Main Street. This year will be in person at The 4500 Lot at Hamilton-Lauraville Main Street and livestreamed here and on other social media platforms. The shave will be held on Saturday, June 25, 2022.
           </p>
         </Modal.Body>
         <Modal.Footer>
