@@ -1,18 +1,24 @@
-const beardStyles = [
-    {
-        name:'1',
-        imgSrc:''
+const beardStyles = {
+    clean:{
+        name:'Clean Shaven',
+        jsName:'clean',
+        imgSrc:'/assets/beard-clean.jpg'
     },
-    {
-        name:'2',
-        imgSrc:''
+    anchor:{
+        name:'Anchor Beard',
+        jsName:'anchor',
+        imgSrc:'/assets/beard-anchor.jpg'
     },
-    {
-        name:'3',
-        imgSrc:''
+    crab:{
+        name:"Crab Beard",
+        jsName:'crab',
+        imgSrc:'/assets/beard-crab.jpg'
     },
-    {
-        name:'4',
-        imgSrc:''
+    dubStache:{
+        name:"Double 'Stache",
+        jsName:'dubStache',
+        imgSrc:'/assets/beard-dub-stache.jpg'
     }
-];
+};
+
+export default beardStyles;
