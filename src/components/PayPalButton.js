@@ -7,7 +7,7 @@ import {
 export const ButtonWrapper = ({ currency, beardName, suggestedAmount }) => {
   // usePayPalScriptReducer can be use only inside children of PayPalScriptProviders
   // This is the main reason to wrap the PayPalButtons in a new component
-  const [{ options, isPending }, dispatch] = usePayPalScriptReducer();
+  const [{ options }, dispatch] = usePayPalScriptReducer();
   const [ donationAmount, changeAmount ] = useState(suggestedAmount);
 
   useEffect(() => {
@@ -18,6 +18,7 @@ export const ButtonWrapper = ({ currency, beardName, suggestedAmount }) => {
         currency: currency,
       },
     });
+    // eslint-disable-next-line
   }, [currency, donationAmount]);
 
   return (

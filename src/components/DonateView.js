@@ -24,14 +24,13 @@ export default function DonateView() {
                 .then(res => res.json())
                 .then(
                     (result) => { 
-                        console.log("dzh result", result);
                         getAmounts({
                             clean: getBeardAmount(result, "Clean Shaven"),
                             anchor: getBeardAmount(result, "Anchor Beard"),
                             crab: getBeardAmount(result, "Crab Beard"),
                             dubStache: getBeardAmount(result, "Double Stache")
                         })
-                        console.log("dzh amounts", amounts);
+                        console.log("count");
                         updateLoading(false);
                     }
                 )
@@ -41,10 +40,9 @@ export default function DonateView() {
         return function cleanup() {
             clearInterval(loop);
         }
-    }, [amounts])
+    }, [amounts, loop])
 
     const beardsWithAmounts = beardStyles.map(beard => {return { ...beard, amount:amounts[beard.jsName]}});
-    console.log("beards with amounts", beardsWithAmounts);
 
     const beardsSortedByAmount = beardsWithAmounts.sort(function(a, b){return b.amount - a.amount});
 

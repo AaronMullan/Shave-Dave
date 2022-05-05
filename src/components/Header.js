@@ -17,9 +17,9 @@ export default function Header() {
             <br />
             <h2>In Support Of</h2>
             <div className="charity-logo-grp">
-                <a id="odesa" href="https://www.baltimoreodesa.org/" target="_blank"><img className="charity-logo" src={odesaLogo} alt="Baltimore Sister City Odesa Logo" /></a>
-                <a id="hlms" href="https://www.bmoremainstreet.com/home" target="_blank"><img className="charity-logo" src={hlmsLogo} alt="Hamilton Lauraville Main Street Logo" /></a>
-                <a id="wck" href="https://wck.org/" target="_blank"><img className="charity-logo" src={wckLogo} alt="World Central Kitchen Logo" /></a>
+                <a id="odesa" href="https://www.baltimoreodesa.org/" target="_blank" rel="noopener noreferrer"><img className="charity-logo" src={odesaLogo} alt="Baltimore Sister City Odesa Logo" /></a>
+                <a id="hlms" href="https://www.bmoremainstreet.com/home" target="_blank" rel="noopener noreferrer"><img className="charity-logo" src={hlmsLogo} alt="Hamilton Lauraville Main Street Logo" /></a>
+                <a id="wck" href="https://wck.org/" target="_blank" rel="noopener noreferrer"><img className="charity-logo" src={wckLogo} alt="World Central Kitchen Logo" /></a>
             </div>
 
         </header>

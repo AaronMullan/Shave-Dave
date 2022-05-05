@@ -6,9 +6,9 @@ export default function HomeTabs(props) {
 
     return (
         <nav className="nav nav-pills nav-justified">
-            <a className="nav-link active" aria-current="page" href="#" onClick={() => changeViewHandler("donate")} >Donate</a>
-            <a className="nav-link" href="#" onClick={() => changeViewHandler("event")} >Live Shave Event</a>
-            <a className="nav-link" href="#" onClick={() => changeViewHandler("about")} >About</a>
+            <button className="nav-link active" aria-current="page" onClick={() => changeViewHandler("donate")} >Donate</button>
+            <button className="nav-link" onClick={() => changeViewHandler("event")} >Live Shave Event</button>
+            <button className="nav-link" onClick={() => changeViewHandler("about")} >About</button>
         </nav>
     )
 }
