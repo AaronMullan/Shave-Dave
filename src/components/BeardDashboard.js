@@ -5,7 +5,7 @@ import {
   } from "@paypal/react-paypal-js";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-function BeardRow({ beard, topAmount }) {
+function BeardRow({ beard, topAmount, isLoading }) {
     const suggestedAmount = beard.amount === topAmount ? 50 : topAmount - beard.amount + 1;
     const suggestedMessage = beard.amount === topAmount ? "$50 would help defend first!" : `$${suggestedAmount} to take first!`
 
@@ -15,24 +15,32 @@ function BeardRow({ beard, topAmount }) {
                 <img className="beard-icon" src={beard.imgSrc} alt={`${beard.name} icon`}/>
             </div>
             <h4 className="beard-name">{beard.name}</h4>
-            <div className="graph-container" style={{ width: 40*beard.amount/topAmount + 'vw'}}>
-                <div className="bar-graph">
-                    <i className="graph-amount">${beard.amount}</i>
+            { isLoading ?
+                <div className="spinner-border spinner-border-lg text-info" role="status">
+                    <span className="visually-hidden"></span>
                 </div>
-            </div>
-            <div className="donate-button-container" style={{maxWidth:"10vw"}}>
-                <ButtonWrapper
-                    currency={"USD"}
-                    beardName={beard.name}
-                    suggestedAmount={suggestedAmount}
-                />
-            </div>
-            <i className="suggested-donation">Suggested donation: <br /> {suggestedMessage} </i>
+                :
+                <>
+                    <div className="graph-container" style={{ width: 40*beard.amount/topAmount + 'vw'}}>
+                        <div className="bar-graph">
+                            <i className="graph-amount">${beard.amount}</i>
+                        </div>
+                    </div>
+                    <div className="donate-button-container" style={{maxWidth:"10vw"}}>
+                        <ButtonWrapper
+                            currency={"USD"}
+                            beardName={beard.name}
+                            suggestedAmount={suggestedAmount}
+                        />
+                    </div>
+                    <i className="suggested-donation">Suggested donation: <br /> {suggestedMessage} </i>
+                </>
+            }
         </div>
     )
 }
 
-export default function BeardDashboard({beardsSortedByAmount}) {
+export default function BeardDashboard({beardsSortedByAmount, isLoading}) {
     const topAmount = beardsSortedByAmount[0].amount;
 
     return (
@@ -44,7 +52,7 @@ export default function BeardDashboard({beardsSortedByAmount}) {
                     currency: "USD"
                 }}
             >
-                {beardsSortedByAmount.map((beard) => <BeardRow beard={beard} topAmount={topAmount} key={beard.jsName} />)}
+                {beardsSortedByAmount.map((beard) => <BeardRow beard={beard} topAmount={topAmount} isLoading={isLoading} key={beard.jsName} />)}
             </PayPalScriptProvider>
         </div>
     )

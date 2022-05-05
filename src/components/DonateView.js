@@ -4,6 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 export default function DonateView() {
     const [ isLoading, updateLoading ] = useState(true);
+    const [loop, setLoop] = useState();
     const [ amounts, getAmounts ] = useState({
         anchor:0,
         crab:0,
@@ -44,23 +45,30 @@ export default function DonateView() {
     }
 
     useEffect(() => {
-        setInterval(() => {
-            fetch("https://shave-dave-server.herokuapp.com/api/donations/")
-            .then(res => res.json())
-            .then(
-                (result) => { 
-                    console.log(result);
-                    getAmounts({
-                        clean: getBeardAmount(result, "Clean Shaven"),
-                        anchor: getBeardAmount(result, "Anchor"),
-                        crab: getBeardAmount(result, "Crab"),
-                        dubStache: getBeardAmount(result, "Double Stache")
-                    })
-                    updateLoading(false);
-                }
-            )
-        }, 10000);
-    }, [])
+        setLoop(
+            setInterval(() => {
+                fetch("https://shave-dave-server.herokuapp.com/api/donations/")
+                .then(res => res.json())
+                .then(
+                    (result) => { 
+                        console.log("dzh result", result);
+                        getAmounts({
+                            clean: getBeardAmount(result, "Clean Shaven"),
+                            anchor: getBeardAmount(result, "Anchor Beard"),
+                            crab: getBeardAmount(result, "Crab Beard"),
+                            dubStache: getBeardAmount(result, "Double Stache")
+                        })
+                        console.log("dzh amounts", amounts);
+                        updateLoading(false);
+                    }
+                )
+            }, 10000)
+        );
+
+        return function cleanup() {
+            clearInterval(loop);
+        }
+    }, [amounts])
 
 
     // const sortedBeards = [];
@@ -75,17 +83,16 @@ export default function DonateView() {
 
     return (
         <div id="donate-view">
+            <h2>How should we Shave Dave?  Donate to vote</h2>
+                <h3>Current leader: </h3>
             { isLoading ? 
                 <div className="spinner-border spinner-border-lg text-info" role="status">
                     <span className="visually-hidden"></span>
                 </div>
             :
-                <>
-                    <h2>How should we Shave Dave?  Donate to vote</h2>
-                    <h3>Current leader: <b>{beardsSortedByAmount[0].name}</b>, up by <b>${beardsSortedByAmount[0].amount - beardsSortedByAmount[1].amount}</b></h3>
-                    <BeardDashboard beardsSortedByAmount={beardsSortedByAmount} />
-                </>
+                    <h3><b>{beardsSortedByAmount[0].name}</b>, up by <b>${beardsSortedByAmount[0].amount - beardsSortedByAmount[1].amount}</b></h3>
             }
+            <BeardDashboard beardsSortedByAmount={beardsSortedByAmount} isLoading={isLoading} />
         </div>
     )
 }

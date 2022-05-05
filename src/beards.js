@@ -15,7 +15,7 @@ const beardStyles = {
         imgSrc:'/assets/beard-crab.jpg'
     },
     dubStache:{
-        name:"Double 'Stache",
+        name:"Double Stache",
         jsName:'dubStache',
         imgSrc:'/assets/beard-dub-stache.jpg'
     }
