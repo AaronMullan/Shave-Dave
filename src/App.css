@@ -14,12 +14,14 @@
   font-family: 'Montserrat', sans-serif;
   padding: 2vh 2vw;
 }
+
 .body {
   padding-bottom: 5vmax;
-  color:#fefefe;
+color: #004eb3;
 }
+
 header {
-  max-height: 20vh;
+  height:25vh;
   grid-row: 1;
   display: flex;
   flex-direction: column;
@@ -32,12 +34,12 @@ header {
   max-width: 1050px;
   background-attachment: scroll;
 }
+
 .header-image {
-  max-width: 25%;
-  /* min-width: 150px;
-  max-width: 400px; */
-  /* height: auto; */
-  max-height:100%;
+  width: 25%;
+  min-width: 150px;
+  max-width: 400px;
+  height: auto;
 }
 
 .beard-row {
@@ -71,6 +73,13 @@ header {
   height:100%;
   margin: auto;
   display:inline-block;
+}
+
+.MatchupModal {
+  justify-items: center;
+}
+
+.MatchupModal p {
   font-size: large;
   vertical-align:middle;
 }
@@ -85,22 +94,43 @@ footer {
   align-items: center;
 }
 
+.MatchupModal h3 {
+  display: flex;
+  justify-content: center;
+}
+
+.MatchupModal .Face-style {
+  padding-left: 10%;
+}
+
 .stylishbutton {
   font-family: 'Montserrat', sans-serif;
-  background-color: lightblue;
+  background-color: #004eb3;
   color: #fefefe;
   border-radius: .5em;
   border: .4vw solid #ffffff;
   font-size: calc(10px + 6 * ((100vw - 320px) / 680));
   padding: 2vw 4vw;
 }
+
 .modal-content {
-  background-image: url("/assets/Shave_Dave_20-BestOf_Background-01.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+
   justify-items: center;
   color: #fefefe;
+}
+
+.modal-body {
+  background-color: #004eb3;
+}
+
+.modal-header {
+  background-color: rgb(241, 209, 0);
+  color: #004eb3;
+}
+
+.modal-footer {
+  background-color: rgb(241, 209, 0);
+  color: #004eb3;
 }
 
 #fblogo {
@@ -113,7 +143,7 @@ footer {
 }
 
 .Face-style {
-  width:90%;
+  width: 90%;
   max-width: 150px;
   margin-bottom: -15%;
 }
@@ -139,18 +169,19 @@ a {
   .stylishbutton {
     grid-row: 16/17;
     grid-column: 7/10;
-    font-size: calc(8px + 6 * ((100vw - 320px) / 680)); 
+    font-size: calc(8px + 6 * ((100vw - 320px) / 680));
     padding: 2vw 4vw;
   }
 }
 
 @media (min-width: 1025px) {
   .body {
-    max-width:1025px;
+    max-width: 1025px;
   }
   header {
     height: fit-content
   }
+
   h3 {
     font-size: 1.5rem;
   }
@@ -163,7 +194,7 @@ a {
   .stylishbutton {
     grid-row: 16/17;
     grid-column: 7/10;
-    font-size: calc(8px + 6 * ((100vw - 320px) / 680)); 
+    font-size: calc(8px + 6 * ((100vw - 320px) / 680));
     padding: 2vh 2vw;
   }
 }

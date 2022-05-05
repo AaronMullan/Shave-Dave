@@ -1,11 +1,12 @@
 import React, { useState } from "react";
-import "./App.css";
-import "bootstrap/dist/css/bootstrap.min.css";
 import Header from "./components/Header"
 import HomeTabs from "./components/HomeTabs";
 import DonateView from "./components/DonateView";
 import EventView from "./components/EventView";
 import Footer from "./components/Footer"
+
+import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   const [ view, changeView ] = useState("donate");
