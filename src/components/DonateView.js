@@ -39,6 +39,7 @@ export default function DonateView() {
         return function cleanup() {
             clearInterval(loop);
         }
+        // eslint-disable-next-line
     }, [amounts])
 
     const beardsWithAmounts = beardStyles.map(beard => {return { ...beard, amount:amounts[beard.jsName]}});
