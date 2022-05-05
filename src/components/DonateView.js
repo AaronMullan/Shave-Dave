@@ -29,8 +29,7 @@ export default function DonateView() {
                             anchor: getBeardAmount(result, "Anchor Beard"),
                             crab: getBeardAmount(result, "Crab Beard"),
                             dubStache: getBeardAmount(result, "Double Stache")
-                        })
-                        console.log("count");
+                        });
                         updateLoading(false);
                     }
                 )
@@ -40,7 +39,7 @@ export default function DonateView() {
         return function cleanup() {
             clearInterval(loop);
         }
-    }, [amounts, loop])
+    }, [amounts])
 
     const beardsWithAmounts = beardStyles.map(beard => {return { ...beard, amount:amounts[beard.jsName]}});
 
