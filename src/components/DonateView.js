@@ -1,44 +1,17 @@
 import React, { useState, useEffect } from "react";
 import BeardDashboard from "./BeardDashboard";
+import beardStyles from "../beards-array";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 export default function DonateView() {
     const [ isLoading, updateLoading ] = useState(true);
-    const [loop, setLoop] = useState();
+    const [ loop, setLoop ] = useState();
     const [ amounts, getAmounts ] = useState({
         anchor:0,
         crab:0,
         clean:0,
         dubStache:0
     });
-    const [ beardsWithAmounts, updateAmounts ] = useState([
-        {
-            name:'Anchor Beard',
-            jsName:'anchor',
-            imgSrc:'/assets/beard-anchor.jpg',
-            amount:75
-        },
-        {
-            name:"Crab Beard",
-            jsName:'crab',
-            imgSrc:'/assets/beard-crab.jpg',
-            amount:50
-        },
-        {
-            name:'Clean Shaven',
-            jsName:'clean',
-            imgSrc:'/assets/beard-clean.jpg',
-            amount:150
-        },
-        {
-            name:"Double Stache",
-            jsName:'dubStache',
-            imgSrc:'/assets/beard-dub-stache.jpg',
-            amount:500
-        }
-    ])
-
-    const beardsSortedByAmount = beardsWithAmounts.sort(function(a, b){return b.amount - a.amount});
 
     function getBeardAmount (result, beardType) {
         return result.donations.filter(data => data.beardVote === beardType).map(data => data.amount).reduce((a, b) => a + b, 0);
@@ -70,16 +43,10 @@ export default function DonateView() {
         }
     }, [amounts])
 
+    const beardsWithAmounts = beardStyles.map(beard => {return { ...beard, amount:amounts[beard.jsName]}});
+    console.log("beards with amounts", beardsWithAmounts);
 
-    // const sortedBeards = [];
-    // for (let i=0; i <= sortedBeards.length; i++) {
-    //     const thisBeardsName = sortedStats[i].jsName;
-    //     const thisBeardStyle = 
-        // sortedBeards.push({
-            
-    //     })
-    // }
-    // console.log("sorted beards", sortedBeards);
+    const beardsSortedByAmount = beardsWithAmounts.sort(function(a, b){return b.amount - a.amount});
 
     return (
         <div id="donate-view">
