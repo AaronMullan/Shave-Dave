@@ -7,6 +7,8 @@ import Footer from "./components/Footer"
 
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import daveLogo from "./pix/2022-logo-fullscreen.JPG";
+import AboutPage from "./about-page.js";
 
 function App() {
   const [ view, changeView ] = useState("donate");

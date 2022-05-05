@@ -188,6 +188,18 @@ footer {
   width: 10%;
 }
 
+a {
+  color: #7affde;
+}
+
+.charity-logo-grp {
+  width:100%;
+}
+
+.charity-logo {
+  width:100%;
+}
+
 @media (min-width: 565px) {
   .announcement {
     margin: 0 5vw;
@@ -224,4 +236,9 @@ footer {
     font-size: calc(8px + 6 * ((100vw - 320px) / 680));
     padding: 2vh 2vw;
   }
+}
+
+.charity-logo {
+  width:33%;
+  padding:2vw;
 }
