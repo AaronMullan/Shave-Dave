@@ -4,6 +4,7 @@
   padding-bottom: 5vmax;
   color: #004eb3;
   min-height: calc(100vh - 80px);
+  padding-bottom:10vh;
 }
 
 .Footer {
@@ -307,7 +308,7 @@
 #total {
   grid-column: 7/10;
   grid-row: 13;
-  color: #fefefe;
+  color: #fefefe86;
   font-size: calc(10px + 6 * ((100vw - 320px) / 680));
   ;
 }
@@ -318,6 +319,14 @@
 
 a {
   color: #7affde;
+}
+
+#email-form {
+  margin:4vh 2vw;
+  padding:4vh 4vw;
+  /* border:2px solid black; */
+  border-radius:15px;
+  background-color:rgba(255, 255, 255, 0.551)
 }
 
 @media (min-width: 565px) {
@@ -447,6 +456,7 @@ a {
 @media (min-width: 1025px) {
   .body {
     max-width: 1025px;
+    padding-bottom:0;
   }
 
   .App-header {
@@ -573,5 +583,13 @@ a {
     grid-column: 7/10;
     font-size: calc(8px + 6 * ((100vw - 320px) / 680));
     padding: 2vh 2vw;
+  }
+
+  #email-form {
+    margin:10vh;
+    padding:10vh;
+    border:2px solid black;
+    border-radius:15px;
+    background-color:rgba(255, 255, 255, 0.551)
   }
 }
