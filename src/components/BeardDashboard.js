@@ -20,17 +20,12 @@ function BeardRow({ beard, topAmount }) {
                     <i className="graph-amount">${beard.amount}</i>
                 </div>
             </div>
-            <div id="donate-button-container">
-                
-                <div
-                    style={{ maxWidth: "750px", minHeight: "200px" }}
-                >
-                    <ButtonWrapper
-                        currency={"USD"}
-                        beardName={beard.name}
-                        suggestedAmount={suggestedAmount}
-                    />
-                </div>
+            <div className="donate-button-container" style={{maxWidth:"10vw"}}>
+                <ButtonWrapper
+                    currency={"USD"}
+                    beardName={beard.name}
+                    suggestedAmount={suggestedAmount}
+                />
             </div>
             <i className="suggested-donation">Suggested donation: <br /> {suggestedMessage} </i>
         </div>

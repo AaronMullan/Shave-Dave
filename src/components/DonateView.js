@@ -77,7 +77,7 @@ export default function DonateView() {
         <div id="donate-view">
             { isLoading ? 
                 <div className="spinner-border spinner-border-lg text-info" role="status">
-                    <span className="visually-hidden">Loading...</span>
+                    <span className="visually-hidden"></span>
                 </div>
             :
                 <>

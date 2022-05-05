@@ -23,7 +23,7 @@ export const ButtonWrapper = ({ currency, beardName, suggestedAmount }) => {
   return (
       <>
       <input type="number" placeholder={suggestedAmount} id={`${beardName}-amount`} name={`${beardName}-amount`} onChange={() => changeAmount(document.getElementById(`${beardName}-amount`).value)}></input>
-    <PayPalButtons
+        <PayPalButtons
       fundingSource="paypal"
       style={{ layout: "vertical", label: "donate" }}
       disabled={false}
