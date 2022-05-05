@@ -2,8 +2,6 @@ import React, { useState, useEffect } from "react";
 import BeardDashboard from "./BeardDashboard";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-import beardStyles from "../beards";
-
 export default function DonateView() {
     const [ isLoading, updateLoading ] = useState(true);
     const [ beardsWithAmounts, updateAmounts ] = useState([
@@ -26,7 +24,7 @@ export default function DonateView() {
             amount:150
         },
         {
-            name:"Double 'Stache",
+            name:"Double Stache",
             jsName:'dubStache',
             imgSrc:'/assets/beard-dub-stache.jpg',
             amount:500
@@ -35,8 +33,26 @@ export default function DonateView() {
 
     const beardsSortedByAmount = beardsWithAmounts.sort(function(a, b){return b.amount - a.amount});
 
-    // useEffect(() => {
+    function getBeardAmount (result, beardType) {
+        return result.donations.filter(data => data.beard === beardType).map(data => data.amount).reduce((a, b) => a + b, 0);
+    }
 
+    useEffect(() => {
+        let amounts;
+        fetch("https://shave-dave-server.herokuapp.com/api/donations/")
+        .then(res => res.json())
+        .then(
+            (result) => { 
+                console.log(result);
+                amounts = {
+                    // "clean-shaven", "anchor", "crab", "double-stache"
+                    cleanAmount: getBeardAmount(result, "Clean Shaven"),
+                    anchorAmount: getBeardAmount(result, "Anchor Beard"),
+                    crabAmount: getBeardAmount(result, "Crab Beard"),
+                    dubStacheAmount: getBeardAmount(result, "Double Stache")
+                }
+            },
+        )
 
         // get current total for clean via db call
         // beardStyles.clean.amount = 
@@ -55,7 +71,7 @@ export default function DonateView() {
         //     beardStyles.dubStache
         // ]),
         // 3000);
-    // }, [])
+    }, [])
 
 
     // const sortedBeards = [];

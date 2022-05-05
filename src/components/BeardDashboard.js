@@ -1,10 +1,13 @@
-import React, { useEffect } from "react";
-// import beardStyles from "../beards";
-// import { Helmet } from 'react-helmet';
-// import paypal from '../pp-script';
+import React from "react";
+import { ButtonWrapper } from "./PayPalButton";
+import {
+    PayPalScriptProvider,
+  } from "@paypal/react-paypal-js";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function BeardRow({ beard, topAmount }) {
+    const suggestedAmount = beard.amount === topAmount ? 50 : topAmount - beard.amount + 1;
+    const suggestedMessage = beard.amount === topAmount ? "$50 would help defend first!" : `$${suggestedAmount} to take first!`
 
     return (
         <div className="beard-row" id={`beard-row-${beard.jsName}`} >
@@ -17,46 +20,37 @@ function BeardRow({ beard, topAmount }) {
                     <i className="graph-amount">${beard.amount}</i>
                 </div>
             </div>
-            <button type="button" className="btn btn-success" id={`paypal-donate-button-container-${beard.jsName}`}>Donate</button>
-            <i className="suggested-donation">Suggested donation: <br /> {beard.amount === topAmount ? "$50 would help defend first!" : `$${ topAmount - beard.amount + 1} to take first!`} </i>
+            <div id="donate-button-container">
+                
+                <div
+                    style={{ maxWidth: "750px", minHeight: "200px" }}
+                >
+                    <ButtonWrapper
+                        currency={"USD"}
+                        beardName={beard.name}
+                        suggestedAmount={suggestedAmount}
+                    />
+                </div>
+            </div>
+            <i className="suggested-donation">Suggested donation: <br /> {suggestedMessage} </i>
         </div>
     )
 }
 
 export default function BeardDashboard({beardsSortedByAmount}) {
     const topAmount = beardsSortedByAmount[0].amount;
-    // function renderDonationButtons() {
-
-    // };
-
-    useEffect(() => {
-        // console.log(paypal)
-        // renderDonationButtons();
-        // console.log(beardStyles);
-        // beardStyles.forEach((beard) =>
-            // PayPal.Donation.Button({
-            //     env: 'sandbox',
-            //     hosted_button_id: 'ZL3RASF47LK5S',
-            //     // business: 'YOUR_EMAIL_OR_PAYERID',
-            //     image: {
-            //         src: 'https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif',
-            //         title: 'PayPal - The safer, easier way to pay online!',
-            //         alt: 'Donate with PayPal button'
-            //     },
-            //     onComplete: function (params) {
-            //         console.log(`${params.amt} donated to beard style ${beard.name}`)
-            //         // add donation amount to database 
-            //     },
-            // }).render(`#paypal-donate-button-container-${beard.name}`)
-        // );
-    });
 
     return (
         <div className="beard-dashboard">
-            {beardsSortedByAmount.map((beard) => <BeardRow beard={beard} topAmount={topAmount} key={beard.jsName} />)}
-            {/* <Helmet>
-                <script async src="https://www.paypalobjects.com/donate/sdk/donate-sdk.js" charset="UTF-8"></script>
-            </Helmet> */}
+            <PayPalScriptProvider
+                options={{
+                    "client-id": "AQRFQThzOnupUWq17womr1CAjO5JEJTJLdiOJUnUdPXs_sIve6RL5sLGadGPGL6d1C1P6xri3520koiW",
+                    components: "buttons",
+                    currency: "USD"
+                }}
+            >
+                {beardsSortedByAmount.map((beard) => <BeardRow beard={beard} topAmount={topAmount} key={beard.jsName} />)}
+            </PayPalScriptProvider>
         </div>
     )
 }
