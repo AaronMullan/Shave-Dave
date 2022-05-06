@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import logo from "./pix/2022-logo-fullscreen.JPG";
-import AboutPage from "./about-page.js";
+import { sendEmail } from "./utils"
+import AboutPage from "./about-page";
 
 function App() {
+  const [emailMessage, updateEmail] = useState(null);
+
+
   return (
     <div className="App">
       <header className="App-header">
@@ -24,6 +28,17 @@ function App() {
             <h3>Join us for our 7th annual charity fund-raising show including live music and entertainment. At the end, we will SHAVE DAVE.  All proceeds go to Baltimore Sister City Odesa, the World Central Kitchen, and Hamilton-Lauraville Main Street.</h3>
             <br></br>
             <h1>#shavedave2022</h1>
+          </div>
+          <div id="email-form">
+            <h3>Share your email address for Shave Dave updates and news.</h3>
+            <input type="text" id="email-input" name="email-input" placeholder="enter email here"></input>
+            <button type="button" className="btn btn-primary" onClick={() => sendEmail({updateEmail})} >Submit</button>
+            {/* {emailSucceeded === true ? 
+              <h3>Good news, you're on our mailing list.  You'll hear from us soon.</h3>
+            :
+              <h3 id="email-confirm">Something went wrong.  Try again.</h3>
+            } */}
+            <h3>{emailMessage}</h3>
           </div>
         </main>
         <div className="Footer">
