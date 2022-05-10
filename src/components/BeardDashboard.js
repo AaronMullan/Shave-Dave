@@ -5,6 +5,30 @@ import {
   } from "@paypal/react-paypal-js";
 import "bootstrap/dist/css/bootstrap.min.css";
 
+function BeardRowNoDonate({ beard, isLoading }) {
+
+    return (
+        <div className="beard-row" id={`beard-row-${beard.jsName}`} >
+            <div className="beard-icon-container">
+                <img className="beard-icon" src={beard.imgSrc} alt={`${beard.name} icon`}/>
+            </div>
+            <h4 className="beard-name">{beard.name}</h4>
+            { isLoading ?
+                <div className="spinner-border spinner-border-lg text-info" role="status">
+                    <span className="visually-hidden"></span>
+                </div>
+                :
+                <>
+                    <div className="no-donate-container">
+                        <i>{beard.desc}</i>
+                    </div>
+                </>
+            }
+        </div>
+    )
+}
+
+
 function BeardRow({ beard, topAmount, isLoading }) {
     const suggestedAmount = beard.amount === topAmount ? 50 : topAmount - beard.amount + 1;
     const suggestedMessage = beard.amount === topAmount ? "$50 would help defend first!" : `$${suggestedAmount} to take first!`
@@ -52,7 +76,7 @@ export default function BeardDashboard({beardsSortedByAmount, isLoading}) {
                     currency: "USD"
                 }}
             >
-                {beardsSortedByAmount.map((beard) => <BeardRow beard={beard} topAmount={topAmount} isLoading={isLoading} key={beard.jsName} />)}
+                {beardsSortedByAmount.map((beard) => <BeardRowNoDonate beard={beard} topAmount={topAmount} isLoading={isLoading} key={beard.jsName} />)}
             </PayPalScriptProvider>
         </div>
     )

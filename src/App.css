@@ -47,10 +47,13 @@ nav {
   justify-content: center;
   color:black;
 }
+#notice {
+  color:red;
+}
 .beard-dashboard {
   display:flex;
   flex-direction: column;
-  justify-content:start;
+  justify-content: flex-start;
   align-items: flex-start;
   margin: 0;
 }
