@@ -57,14 +57,6 @@ export default function DonateView() {
                 </ul>
             <br />
                 <h3 id="notice">Donation is not open yet, but will be soon! <br /><br />In the meantime, check out this year's face-do's, then join our mailing list for updates.</h3>
-                {/* <h3>Current leader: </h3>
-            { isLoading ? 
-                <div className="spinner-border spinner-border-lg text-info" role="status">
-                    <span className="visually-hidden"></span>
-                </div>
-            :
-                    <h3><b>{beardsSortedByAmount[0].name}</b>, up by <b>${beardsSortedByAmount[0].amount - beardsSortedByAmount[1].amount}</b></h3>
-            } */}
             <BeardDashboard beardsSortedByAmount={beardsSortedByAmount} isLoading={isLoading} />
         </div>
     )

@@ -8,7 +8,6 @@ import EmailForm from "./components/EmailForm";
 import Footer from "./components/Footer"
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-// import AboutPage from "./about-page.js";
 
 function App() {
   const [ view, changeView ] = useState("donate");
