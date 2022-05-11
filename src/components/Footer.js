@@ -1,5 +1,4 @@
 import React from "react";
-import AboutPage from "../about-page.js";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 export default function Footer() {
@@ -16,7 +15,6 @@ export default function Footer() {
                 alt="instagram link"
                 />
             </a>
-            <AboutPage className="stylishbutton" />
             <a
                 href="https://www.facebook.com/ShaveDaveBmore"
                 target="_blank"

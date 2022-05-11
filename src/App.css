@@ -18,13 +18,10 @@
   margin: 0 auto;
   padding-bottom: 5vmax;
   color: #004eb3;
-  min-height: calc(100vh - 80px);
-  padding-bottom: 10vh;
 }
 
 header {
   margin:0 auto;
-  height:25vh;
   grid-row: 1;
   display: flex;
   flex-direction: column;
@@ -36,7 +33,6 @@ header {
   width: 100%;
   max-width: 1050px;
   background-attachment: scroll;
-  padding-bottom: 5vh;
 }
 
 .header-image {
@@ -50,8 +46,12 @@ nav {
   justify-content: center;
   color:black;
 }
+li {
+  text-align: start;
+}
 #notice {
-  color:red;
+  color: black;
+  font-weight: bold;
 }
 .beard-dashboard {
   display:flex;
@@ -82,9 +82,7 @@ nav {
   border: 5px solid black;
   max-height:20vh;
 }
-.beard-name {
-  width:10vw;
-}
+
 .graph-container {
   max-width:25vw;
 }
@@ -144,7 +142,6 @@ nav {
 }
 
 .modal-content {
-
   justify-items: center;
   color: #fefefe;
 }
@@ -187,7 +184,6 @@ footer {
 
 .announcement {
   margin: 0 3vw;
-  padding: 10vh 0;
 }
 
 .Container .col {
@@ -200,7 +196,7 @@ footer {
 
 .charity-logo {
   width:100%;
-  max-width:20vw;
+  max-width:40vw;
   padding:0 2vw;
 }
 
@@ -220,6 +216,22 @@ label {
   margin-right: 15px;
 }
 
+.beard-label {
+  margin-left:40%;
+  width:60%;
+  display: flex;
+  flex-direction:column;
+  text-align: left;
+}
+
+.spinner-border .no-donate {
+  margin-left:50%;
+}
+
+.loading-beard {
+  margin-left:40%;
+}
+
 @media (min-width: 565px) {
   .announcement {
     margin: 0 5vw;
@@ -234,9 +246,12 @@ label {
 }
 
 @media (min-width: 1025px) {
+  header {
+    height:25vh;
+    padding-bottom:5vh;
+  }
   .body {
     max-width: 1025px;
-    padding-bottom: 0;
   }
   header {
     height: fit-content
@@ -245,11 +260,14 @@ label {
   h3 {
     font-size: 1.5rem;
   }
-  .Header-image {
-    width: 25%;
+  .header-image {
+    width: 15%;
     min-width: 200px;
     max-width: 40vh;
     max-height: 40vh;
+  }
+  .announcement {
+    padding: 10vh 0;
   }
   .stylishbutton {
     grid-row: 16/17;
@@ -257,17 +275,25 @@ label {
     font-size: calc(8px + 6 * ((100vw - 320px) / 680));
     padding: 2vh 2vw;
   }
-}
-
-.charity-logo {
-  width:33%;
-  padding:0 2vw;
-
+  .charity-logo {
+    width:25%;
+    padding:0 2vw;
+  }
   #email-form {
-    margin: 10vh;
+    margin: 10vh 0;
     padding: 10vh;
     border: 2px solid black;
     border-radius: 15px;
     background-color: rgba(255, 255, 255, 0.551)
+  }
+  .beard-name .no-donate{
+    width:40vw;
+  }
+  .beard-label {
+    margin-left:5%;
+    width:70%;
+    display: flex;
+    flex-direction:column;
+    text-align: left;
   }
 }
