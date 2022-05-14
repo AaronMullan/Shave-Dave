@@ -24,10 +24,11 @@ export default function DonateView() {
                 .then(res => res.json())
                 .then(
                     (result) => { 
+                        console.log(result);
                         getAmounts({
                             clean: getBeardAmount(result, "Clean Shaven"),
-                            anchor: getBeardAmount(result, "Anchor Beard"),
-                            crab: getBeardAmount(result, "Crab Beard"),
+                            anchor: getBeardAmount(result, "Odesa Anchor"),
+                            crab: getBeardAmount(result, "Bmore Crab"),
                             dubStache: getBeardAmount(result, "Double Stache")
                         });
                         updateLoading(false);
@@ -43,7 +44,6 @@ export default function DonateView() {
     }, [amounts])
 
     const beardsWithAmounts = beardStyles.map(beard => {return { ...beard, amount:amounts[beard.jsName]}});
-
     const beardsSortedByAmount = beardsWithAmounts.sort(function(a, b){return b.amount - a.amount});
 
     return (
@@ -51,11 +51,11 @@ export default function DonateView() {
             <h2>How should we Shave Dave?  Donate to vote.  Voting ends Saturday, June 25 at 5 PM!</h2>
             <ul>
                 <li> Decide your favorite Beard and donate to that style.</li>
-                <li>Follow us on FB and Instagram to track the leader</li>
+                <li>Follow us on FB and Instagram to track the leader.</li>
                 <li>Tune in or show up to the Live Variety Show June 26 where Dave will be shaved LIVE.</li>
-                </ul>
+            </ul>
             <br />
-                <h3 id="notice">Check out this year's face-do's, donate to your favorite, and then join our mailing list for updates.</h3>
+            <h3 id="notice">Check out this year's face-do's, donate to your favorite, and then join our mailing list for updates.</h3>
             <BeardDashboard beardsSortedByAmount={beardsSortedByAmount} isLoading={isLoading} />
         </div>
     )

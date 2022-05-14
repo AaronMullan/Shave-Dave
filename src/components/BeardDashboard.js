@@ -15,23 +15,23 @@ function BeardRow({ beard, topAmount, isLoading }) {
     <div className="beard-row" id={`beard-row-${beard.jsName}`}>
       {isLoading ? (
         <>
-        <div className="beard-icon-container">
-          <img
-            className="beard-icon"
-            src='/assets/beard-clean-solid-plus.png'
-            alt={`${beard.name} icon`}
-          />
-        </div>
-        <div className="loading-beard">
-          <div
-              className="spinner-border spinner-border-lg text-info no-donate"
-              role="status"
-          >
-              <span className="visually-hidden"></span>
+          <div className="beard-icon-container">
+            <img
+              className="beard-icon"
+              src='/assets/beard-clean-solid-plus.png'
+              alt={`${beard.name} icon`}
+            />
           </div>
-          <i>Loading Beard...</i>
-        </div>
-      </>
+          <div className="loading-beard">
+            <div
+                className="spinner-border spinner-border-lg text-info no-donate"
+                role="status"
+            >
+                <span className="visually-hidden"></span>
+            </div>
+            <i>Loading Beard...</i>
+          </div>
+        </>
       ) : (
         <>
           <div className="icon-and-name">
@@ -78,7 +78,7 @@ export default function BeardDashboard({ beardsSortedByAmount, isLoading }) {
       <PayPalScriptProvider
         options={{
           "client-id":
-            "AQRFQThzOnupUWq17womr1CAjO5JEJTJLdiOJUnUdPXs_sIve6RL5sLGadGPGL6d1C1P6xri3520koiW",
+            "AZI6hiDTy8KCl4usTyKrZd7Id9fTRy1xq_JLSbolEBMlRX98M8akex7Er5HZTHJy9A5qlcthld_p-RFV",
           components: "buttons",
           currency: "USD",
         }}
