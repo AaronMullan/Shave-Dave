@@ -1,12 +1,12 @@
 const beardStyles = [
         {
-            name:'Anchor Beard',
-            desc:'The Anchor is a symbol of Ukraine.',
+            name:'Odesa Anchor',
+            desc:'The Anchor is a symbol of Odesa, Ukraine.',
             jsName:'anchor',
             imgSrc:'/assets/beard-anchor-solid-plus.png'
         },
         {
-            name:"Crab Beard",
+            name:"Bmore Crab",
             desc:"Maryland Pride you can't hide.",
             jsName:'crab',
             imgSrc:'/assets/beard-crab-solid-plus.png',

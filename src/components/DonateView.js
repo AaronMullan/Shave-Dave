@@ -48,15 +48,14 @@ export default function DonateView() {
 
     return (
         <div id="donate-view">
-            <h2>How should we Shave Dave?  Donate to vote</h2>
+            <h2>How should we Shave Dave?  Donate to vote.  Voting ends Saturday, June 25 at 5 PM!</h2>
             <ul>
-                <li> Decide your favorite Beard and use buttons below to donate to that style.</li>
-            <li>Follow us here and on FB and Instagram to track the excitement</li>
-            <li>Pledge to push your Beard higher until the Final Showdown SHAVE on Saturday, June 25.</li>
-            <li>We will host a Live Variety Show accepting pledges up until 5:00PM SHARP then we will tally the final pledges and Dave will be shaved LIVE. It’ll be a HOOT and all for a good cause.</li>
+                <li> Decide your favorite Beard and donate to that style.</li>
+                <li>Follow us on FB and Instagram to track the leader</li>
+                <li>Tune in or show up to the Live Variety Show June 26 where Dave will be shaved LIVE.</li>
                 </ul>
             <br />
-                <h3 id="notice">Donation is not open yet, but will be soon! <br /><br />In the meantime, check out this year's face-do's, then join our mailing list for updates.</h3>
+                <h3 id="notice">Check out this year's face-do's, donate to your favorite, and then join our mailing list for updates.</h3>
             <BeardDashboard beardsSortedByAmount={beardsSortedByAmount} isLoading={isLoading} />
         </div>
     )
