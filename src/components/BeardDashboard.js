@@ -78,7 +78,8 @@ export default function BeardDashboard({ beardsSortedByAmount, isLoading }) {
       <PayPalScriptProvider
         options={{
           "client-id":
-            "AZI6hiDTy8KCl4usTyKrZd7Id9fTRy1xq_JLSbolEBMlRX98M8akex7Er5HZTHJy9A5qlcthld_p-RFV",
+            // "AQRFQThzOnupUWq17womr1CAjO5JEJTJLdiOJUnUdPXs_sIve6RL5sLGadGPGL6d1C1P6xri3520koiW", // danzhaas SB account
+            "AZI6hiDTy8KCl4usTyKrZd7Id9fTRy1xq_JLSbolEBMlRX98M8akex7Er5HZTHJy9A5qlcthld_p-RFV", // official SD prod acct
           components: "buttons",
           currency: "USD",
         }}
