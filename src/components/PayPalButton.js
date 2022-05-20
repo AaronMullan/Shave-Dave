@@ -63,6 +63,7 @@ export const ButtonWrapper = ({ currency, beardName, suggestedAmount }) => {
       onApprove={ async (data, actions) => {
         const { status, id, payer: { email_address: email, address: {postal_code:zipCode}}} = await actions.order.capture();
         const url = 'https://shave-dave-server.herokuapp.com/api/donations/';
+        // const url = 'http://localhost:5000/api/donations' // for local testing
 
         const donation = {
           beardVote:beardName,
