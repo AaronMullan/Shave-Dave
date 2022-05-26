@@ -62,7 +62,7 @@ li {
 }
 .beard-row {
   margin: 2vh 0;
-  max-height:20vh;
+  max-height:33vh;
   width:100%;
   display:flex;
   flex-direction:row;
@@ -72,14 +72,12 @@ li {
   border-radius:15px;
 }
 .beard-row > * {
-  margin: 0 0.5vw;
-}
-.beard-icon-container {
-  width: 10vw;
+  margin: 2vw;
 }
 .beard-icon {
+  max-width: 33vw;
   border-radius: 50%;
-  border: 5px solid black;
+  border: 3px solid black;
   max-height:20vh;
 }
 
@@ -286,8 +284,59 @@ label {
     border-radius: 15px;
     background-color: rgba(255, 255, 255, 0.551)
   }
-  .beard-name .no-donate{
-    width:40vw;
+  .beard-row {
+    margin: 2vh 0;
+    max-height:20vh;
+    width:100%;
+    display:flex;
+    flex-direction:row;
+    color:black;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.596);
+    border-radius:15px;
+  }
+  .beard-row > * {
+    margin: 0 0.5vw;
+  }
+  .beard-icon-container {
+    width: 10vw;
+  }
+  .beard-icon {
+    border-radius: 50%;
+    border: 3px solid black;
+    max-height:15vh;
+  }
+  .kitchen-sink {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .graph-container {
+    width:50vw;
+  }
+  .bar-graph {
+    background-color: #0d01f1;
+    color:white;
+    height:100%;
+    width:100%;
+    max-width:25vw;
+  }
+  .graph-amount {
+    height:100%;
+    margin: auto;
+    display:inline-block;
+    padding:3vh 0;
+  }
+  .donate-button-container {
+    max-height:10vh;
+    width:25vw;
+  }
+  .donate-button-container > * {
+    margin:0;
+  }
+  .suggested-donation {
+    margin-left:4vw;
+    max-width:25%;
   }
   .beard-label {
     margin-left:5%;
