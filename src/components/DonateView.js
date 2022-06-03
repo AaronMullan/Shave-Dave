@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import BeardDashboard from "./BeardDashboard";
 import beardStyles from "../beards-array";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Spinner } from "react-bootstrap";
 
 export default function DonateView() {
     const [ isLoading, updateLoading ] = useState(true);
@@ -61,7 +60,6 @@ export default function DonateView() {
             <div id="total">
                 <h2>Total Raised: </h2>
                 { isLoading ? 
-                // <Spinner />
                 <div
                     className="spinner-border spinner-border-lg text-info no-donate"
                     role="status"
