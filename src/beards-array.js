@@ -12,7 +12,7 @@ const beardStyles = [
             imgSrc:'/assets/beard-crab-solid-plus.png',
         },
         {
-            name:'Clean Shaven',
+            name:'Clean Shave',
             desc:"Endorsed by Dave's wife Kerry.",
             jsName:'clean',
             imgSrc:'/assets/beard-clean-solid-plus.png',

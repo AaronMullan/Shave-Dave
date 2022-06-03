@@ -26,7 +26,7 @@ export default function DonateView() {
                     (result) => { 
                         console.log(result);
                         getAmounts({
-                            clean: getBeardAmount(result, "Clean Shaven"),
+                            clean: getBeardAmount(result, "Clean Shaven") + getBeardAmount(result, "Clean Shave"),
                             anchor: getBeardAmount(result, "Odesa Anchor"),
                             crab: getBeardAmount(result, "Bmore Crab"),
                             dubStache: getBeardAmount(result, "Double Stache")
