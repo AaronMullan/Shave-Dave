@@ -80,7 +80,9 @@ li {
   border: 3px solid black;
   max-height:20vh;
 }
-
+#instructions > li {
+  font-size: large;
+}
 .graph-container {
   max-width:25vw;
 }
