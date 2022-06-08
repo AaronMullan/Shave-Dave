@@ -11,7 +11,7 @@ import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
-  const [ view, changeView ] = useState("chart");
+  const [ view, changeView ] = useState("donate");
   
   function changeViewHandler(pageName) {
     changeView(pageName);
