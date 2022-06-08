@@ -91,7 +91,7 @@ li {
   color:white;
   height:100%;
   width:100%;
-  max-width:25vw;
+  /* max-width:25vw; */
 }
 .graph-amount {
   height:100%;
@@ -232,6 +232,38 @@ label {
   margin-left:40%;
 }
 
+.beard-chart {
+  background-color: rgba(255, 255, 255, 0.819);
+  border-radius: 15px;
+  padding:2vh 2vw;
+}
+#chart-total, #chart-total > * {
+  margin-bottom: 0
+}
+.chart-row {
+  display: flex;
+  flex-direction: row;
+  max-height: 18vh;
+}
+.chart-row > * {
+  margin:1vh 1vw;
+}
+.beardChart-icon-container, .icon-and-name {
+  width:25vw;
+}
+.beardChart-icon {
+  border-radius: 50%;
+  border: 3px solid black;
+  max-height:13vh;
+  max-width:25vw;
+}
+.beardChart-name {
+  font-size: large;
+}
+.chart-container {
+  width:63vw;
+}
+
 @media (min-width: 565px) {
   .announcement {
     margin: 0 5vw;
@@ -321,7 +353,7 @@ label {
     color:white;
     height:100%;
     width:100%;
-    max-width:25vw;
+    /* max-width:25vw; */
   }
   .graph-amount {
     height:100%;
@@ -346,5 +378,14 @@ label {
     display: flex;
     flex-direction:column;
     text-align: left;
+  }
+  .beardChart-icon-container, .icon-and-name {
+    width:15vw;
+  }
+  .chart-container {
+    width:75vw;
+  }
+  .beardChart-name {
+    font-size: large;
   }
 }

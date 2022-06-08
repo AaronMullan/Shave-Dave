@@ -14,6 +14,7 @@ export default function NavTabs(props) {
             <button id="donate-tab" className="nav-link active" aria-current="page" onClick={() => changeViewHandler("donate")} >Donate</button>
             <button id="event-tab" className="nav-link" onClick={() => changeViewHandler("event")} >Live Shave Event</button>
             <button id="about-tab" className="nav-link" onClick={() => changeViewHandler("about")} >About</button>
+            <button id="chart-tab" className="nav-link" onClick={() => changeViewHandler("chart")} >Chart View</button>
         </nav>
     )
 }

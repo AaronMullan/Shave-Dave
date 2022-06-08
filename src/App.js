@@ -4,6 +4,7 @@ import NavTabs from "./components/NavTabs";
 import DonateView from "./components/DonateView";
 import EventView from "./components/EventView";
 import AboutView from "./components/AboutView";
+import ChartView from "./components/ChartView";
 import EmailForm from "./components/EmailForm";
 import Footer from "./components/Footer"
 import "./App.css";
@@ -24,6 +25,7 @@ function App() {
           <NavTabs changeViewHandler={changeViewHandler} view={view} />
           {view === "donate" ? <DonateView /> : 
             view === "event" ? <EventView /> : 
+            view === "chart" ? <ChartView /> : 
             <AboutView />}
           <EmailForm />
         </main>
