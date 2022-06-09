@@ -263,6 +263,10 @@ label {
 .chart-container {
   width:63vw;
 }
+iframe {
+  width:100%;
+  height:75vh;
+}
 
 @media (min-width: 565px) {
   .announcement {
