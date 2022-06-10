@@ -4,9 +4,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
 function BeardRow({ beard, topAmount, isLoading }) {
   return (
     <div className="chart-row" id={`chart-row-${beard.jsName}`}>
-      {isLoading ? (
+      {true ? (
         <>
-          <div className="beardChart-icon-container">
+          <div className="loading-beardChart-icon-container">
             <img
               className="beardChart-icon"
               src='/assets/beard-clean-solid-plus.png'

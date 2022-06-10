@@ -60,6 +60,11 @@ li {
   align-items: flex-start;
   margin: 0;
 }
+.loading-beard {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
 .beard-row {
   margin: 2vh 0;
   max-height:33vh;
@@ -229,10 +234,6 @@ label {
 
 .spinner-border .no-donate {
   margin-left:50%;
-}
-
-.loading-beard {
-  margin-left:40%;
 }
 
   .beard-chart {

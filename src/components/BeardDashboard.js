@@ -15,7 +15,7 @@ function BeardRow({ beard, topAmount, isLoading }) {
     <div className="beard-row" id={`beard-row-${beard.jsName}`}>
       {isLoading ? (
         <>
-          <div className="beard-icon-container">
+          <div className="loading-beard-icon-container">
             <img
               className="beard-icon"
               src='/assets/beard-clean-solid-plus.png'
