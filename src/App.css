@@ -328,6 +328,7 @@ label {
   }
   .beard-row {
     max-height:25vh;
+    height:22vh;
   }
   .beard-row > * {
     margin: 0 0.5vw;
