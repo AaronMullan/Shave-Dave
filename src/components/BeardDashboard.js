@@ -47,22 +47,21 @@ function BeardRow({ beard, topAmount, isLoading }) {
           <div className="kitchen-sink">
             <div
               className="graph-container"
-              style={{ width: (40 * beard.amount) / topAmount + "vw" }}
             >
-              <div className="bar-graph">
+              <div className="bar-graph" style={{ width: (100 * beard.amount) / topAmount + "%" }}>
                 <i className="graph-amount">${beard.amount}</i>
               </div>
             </div>
-            <div className="donate-button-container" style={{ maxWidth: "10vw" }}>
+            <div className="donate-button-container">
+              <i className="suggested-donation">
+                Suggested donation: <br /> {suggestedMessage}{" "}
+              </i>
               <ButtonWrapper
                 currency={"USD"}
                 beardName={beard.name}
                 suggestedAmount={suggestedAmount}
               />
             </div>
-            <i className="suggested-donation">
-              Suggested donation: <br /> {suggestedMessage}{" "}
-            </i>
           </div>
         </>
       )}

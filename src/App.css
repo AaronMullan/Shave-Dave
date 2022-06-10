@@ -63,6 +63,7 @@ li {
 .beard-row {
   margin: 2vh 0;
   max-height:33vh;
+  height:28vh;
   width:100%;
   display:flex;
   flex-direction:row;
@@ -75,7 +76,7 @@ li {
   margin: 2vw;
 }
 .beard-icon {
-  max-width: 33vw;
+  width:25vw;
   border-radius: 50%;
   border: 3px solid black;
   max-height:20vh;
@@ -83,15 +84,19 @@ li {
 #instructions > li {
   font-size: large;
 }
+.kitchen-sink {
+  width:60vw;
+  height:23vh;
+}
 .graph-container {
-  max-width:25vw;
+  max-width:50vw;
+  margin-bottom:1vh;
 }
 .bar-graph {
   background-color: #0d01f1;
   color:white;
   height:100%;
   width:100%;
-  /* max-width:25vw; */
 }
 .graph-amount {
   height:100%;
@@ -101,13 +106,11 @@ li {
 }
 .donate-button-container {
   max-height:10vh;
-  width:25vw;
+  width:100%;
 }
 .donate-button-container > * {
   margin:0;
-}
-.suggested-donation {
-  margin-left:8vw;
+  width:60vw;
 }
 
 .MatchupModal {
@@ -232,41 +235,41 @@ label {
   margin-left:40%;
 }
 
-.beard-chart {
-  background-color: rgba(255, 255, 255, 0.819);
-  border-radius: 15px;
-  padding:2vh 2vw;
-}
-#chart-total, #chart-total > * {
-  margin-bottom: 0
-}
-.chart-row {
-  display: flex;
-  flex-direction: row;
-  max-height: 18vh;
-}
-.chart-row > * {
-  margin:1vh 1vw;
-}
-.beardChart-icon-container, .icon-and-name {
-  width:25vw;
-}
-.beardChart-icon {
-  border-radius: 50%;
-  border: 3px solid black;
-  max-height:13vh;
-  max-width:25vw;
-}
-.beardChart-name {
-  font-size: large;
-}
-.chart-container {
-  width:63vw;
-}
-iframe {
-  width:100%;
-  height:75vh;
-}
+  .beard-chart {
+    background-color: rgba(255, 255, 255, 0.819);
+    border-radius: 15px;
+    padding:2vh 2vw;
+  }
+  #chart-total, #chart-total > * {
+    margin-bottom: 0
+  }
+  .chart-row {
+    display: flex;
+    flex-direction: row;
+    max-height: 18vh;
+  }
+  .chart-row > * {
+    margin:1vh 1vw;
+  }
+  .beardChart-icon-container, .icon-and-name {
+    width:25vw;
+  }
+  .beardChart-icon {
+    border-radius: 50%;
+    border: 3px solid black;
+    max-height:13vh;
+    max-width:25vw;
+  }
+  .beardChart-name {
+    font-size: large;
+  }
+  .chart-container {
+    width:63vw;
+  }
+  iframe {
+    width:100%;
+    height:75vh;
+  }
 
 @media (min-width: 565px) {
   .announcement {
@@ -287,7 +290,7 @@ iframe {
     padding-bottom:5vh;
   }
   .body {
-    max-width: 1025px;
+    max-width: 80vw;
   }
   header {
     height: fit-content
@@ -323,41 +326,40 @@ iframe {
     background-color: rgba(255, 255, 255, 0.551)
   }
   .beard-row {
-    margin: 2vh 0;
-    max-height:20vh;
-    width:100%;
-    display:flex;
-    flex-direction:row;
-    color:black;
-    align-items: center;
-    background-color: rgba(255, 255, 255, 0.596);
-    border-radius:15px;
+    max-height:25vh;
   }
   .beard-row > * {
     margin: 0 0.5vw;
   }
   .beard-icon-container {
     width: 10vw;
+    margin: 0 auto;
   }
   .beard-icon {
     border-radius: 50%;
     border: 3px solid black;
-    max-height:15vh;
+    height:15vh;
+    width:15vh;
   }
   .kitchen-sink {
+    width:70vw;
+    height:20vh;
     display:flex;
     flex-direction: row;
-    justify-content: space-between;
+    align-items: center;
+  }
+  .kitchen-sink > * {
+    margin: 0 auto;
   }
   .graph-container {
-    width:50vw;
+    width:35vw;
+    height:15vh;
   }
   .bar-graph {
     background-color: #0d01f1;
     color:white;
     height:100%;
     width:100%;
-    /* max-width:25vw; */
   }
   .graph-amount {
     height:100%;
@@ -366,15 +368,17 @@ iframe {
     padding:3vh 0;
   }
   .donate-button-container {
-    max-height:10vh;
-    width:25vw;
+    height:18vh;
+    max-height:18vh;
+    width:15vw;
   }
   .donate-button-container > * {
-    margin:0;
+    margin:0 1vw;
+    width:15vw;
   }
   .suggested-donation {
-    margin-left:4vw;
-    max-width:25%;
+    max-width:15vw;
+    font-size: small;
   }
   .beard-label {
     margin-left:5%;
