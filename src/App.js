@@ -22,7 +22,7 @@ function App() {
       <Header />
       <div className="body">
         <main role="main">
-          <NavTabs changeViewHandler={changeViewHandler} view={view} />
+          {/* <NavTabs changeViewHandler={changeViewHandler} view={view} /> */}
           {view === "donate" ? <DonateView /> : 
             view === "event" ? <EventView /> : 
             view === "chart" ? <ChartView /> : 
