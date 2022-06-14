@@ -39,9 +39,9 @@ export default function EventView() {
                     </a>
                 </div>
                 <div className="col-12 col-sm-6 col-lg-4">
-                    {/* <a href="" target="_blank" rel="noopener noreferrer" > */}
+                    <a href="https://www.planlogicpromo.com/" target="_blank" rel="noopener noreferrer" >
                         <img src={planLogic} alt="plan logic logo" />
-                    {/* </a> */}
+                    </a>
                 </div>
                 <div className="col-12 col-sm-6 col-lg-4">
                     <a href="https://www.tortugakombucha.com/" target="_blank" rel="noopener noreferrer" >
