@@ -5,6 +5,7 @@ import DonateView from "./components/DonateView";
 import EventView from "./components/EventView";
 import AboutView from "./components/AboutView";
 import ChartView from "./components/ChartView";
+import SponsorsView from "./components/SponsorsView";
 import EmailForm from "./components/EmailForm";
 import Footer from "./components/Footer"
 import "./App.css";
@@ -23,10 +24,11 @@ function App() {
       <div className="body">
         <main role="main">
           <NavTabs changeViewHandler={changeViewHandler} view={view} />
-          {view === "donate" ? <DonateView /> : 
+          { view === "donate" ? <DonateView /> : 
             view === "event" ? <EventView /> : 
             view === "chart" ? <ChartView /> : 
-            <AboutView />}
+            view === "sponsors" ? <SponsorsView /> : 
+            <AboutView /> }
           <EmailForm />
         </main>
       </div>

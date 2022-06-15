@@ -35,6 +35,11 @@ function BeardRow({ beard, topAmount, isLoading }) {
       ) : (
         <>
           <div className="icon-and-name">
+            {beard.amount === topAmount ? 
+            <p id="leader-label">Current Leader</p>
+            :
+            <></>
+            }
             <div className="beard-icon-container">
               <img
                 className="beard-icon"
