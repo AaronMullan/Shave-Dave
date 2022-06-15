@@ -9,7 +9,7 @@ export default function LandingView({changeViewHandler}) {
 
     return (
         <>
-            <img id="hero-img" src={heroImg} />
+            <img id="hero-img" src={heroImg} alt="Dave getting shaved" />
             <h1>A fundraiser event to benefit</h1>
             <div className="benefit-logos">
                 <a id="odesa" href="https://www.baltimoreodesa.org/" target="_blank" rel="noopener noreferrer">
@@ -27,11 +27,11 @@ export default function LandingView({changeViewHandler}) {
 
             <h1>How should we Shave Dave?</h1>
             <ol>
-                <li>Learn <a onClick={() => changeViewHandler("about")}>about Shave Dave</a> and the charities we're helping this year</li>
-                <li><a onClick={() => changeViewHandler("donate")}>Donate</a> to your favorite beardo</li>
-                <li>Shave the Date: the <a onClick={() => changeViewHandler("event")}>live Shave event</a> is Saturday, June 25</li>
-                <li>Visit our <a onClick={() => changeViewHandler("sponsors")}>Sponsors</a></li>
-                <li>Keep watching <a onClick={() => changeViewHandler("chart")}>the chart</a> and give your favorite beardo a boost to keep it on top</li>
+                <li>Learn <button className="landing-buttons" onClick={() => changeViewHandler("about")}>about Shave Dave</button> and the charities we're helping this year</li>
+                <li><button className="landing-buttons" onClick={() => changeViewHandler("donate")}>Donate</button> to your favorite beardo</li>
+                <li>Shave the Date: the <button className="landing-buttons" onClick={() => changeViewHandler("event")}>live Shave event</button> is Saturday, June 25</li>
+                <li>Visit our <button className="landing-buttons" onClick={() => changeViewHandler("sponsors")}>Sponsors</button></li>
+                <li>Keep watching <button className="landing-buttons" onClick={() => changeViewHandler("chart")}>the chart</button> and give your favorite beardo a boost to keep it on top</li>
             </ol>
 
         </>

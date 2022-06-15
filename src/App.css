@@ -284,6 +284,12 @@ label {
     height:75vh;
   }
 
+  .landing-buttons {
+    border:none;
+    background-color: #ffffff;
+    padding:0;
+  }
+
 @media (min-width: 565px) {
   .announcement {
     margin: 0 5vw;
