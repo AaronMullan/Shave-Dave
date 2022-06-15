@@ -280,6 +280,31 @@ label {
     flex-direction: row;
     flex-wrap: wrap;
   }
+  .goal-meter-container {
+    background-color:#ffffff;
+    border:2px solid black;
+    border-radius: 15px;
+    display:flex;
+    flex-direction: row;
+  }
+  .meter-bar {
+    margin: 0.25vh 0;
+    /* height: 100%; */
+    background-color: blue;
+    border-radius: 15px;
+  }
+  .meter-amount {
+    font-size: x-large;
+    color:white;
+  }
+  #amount-outside {
+    color:black;
+  }
+  #leader-label {
+    margin: 1vh 0 0 0;
+    font-weight: bold;
+    color:blue
+  }
 
 @media (min-width: 565px) {
   .announcement {

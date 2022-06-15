@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import BeardChart from "./BeardChart";
+import GoalMeter from "./GoalMeter";
 import beardStyles from "../beards-array";
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -60,7 +61,7 @@ export default function ChartView() {
             <div id="chart-total">
                 { isLoading ? 
                 <>
-                    <h2>Total Raised: </h2>
+                    <h2>Total Raised toward Goal of $25,000:</h2>
                     <div
                         className="spinner-border spinner-border-lg text-info no-donate"
                         role="status"
@@ -70,7 +71,8 @@ export default function ChartView() {
                 </>
                 :
                 <>
-                    <h2>Total Raised: <b>${getTotalAmount()}</b></h2>
+                    <h2>Total Raised toward Goal of $25,000:</h2>
+                    <GoalMeter totalAmount={getTotalAmount()}/>
                     <p> as of {new Date().toDateString()} at {new Date().toLocaleTimeString()}</p>
                 </>
                 }
