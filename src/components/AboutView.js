@@ -5,18 +5,18 @@ export default function AboutView() {
     return (
         <div id="about-view">
             <div className="announcement">
-            <p><b>PLEASE READ BELOW FOR THE DONATION PROCESS SO YOUR PLEDGE WILL BE COUNTED TOWARD THE BEARD YOU CHOOSE. THE BEARD WITH THE MOST CONTRIBUTIONS MOVES ON TO THE NEXT ROUND.<br />
+            <p><b>PLEASE READ BELOW FOR THE DONATION PROCESS SO YOUR PLEDGE WILL BE COUNTED TOWARD THE BEARD YOU CHOOSE.<br />
             <br />
             ALL PROFITS WILL BE DONATED TO:<br />
             BALTIMORE SISTER CITY ODESA <br />
             and<br />
             HAMILTON-LAURAVILLE MAIN STREET<br /></b>
+            Hamilton-Lauraville Main Street is a public charity recognized as tax-exempt by the IRS under Section 501(c)(3).
           </p>
 
           <p>
-            • As of 5/11/22, donations are not live yet, but they will be coming soon!  Join the email list at the bottom for updates.<br />
-            • Four Beards styles have been chosen. <br />
-            • Decide your favorite Beard and use buttons on this site to donate to that style.<br />
+            • Join the email list at the bottom for updates.<br />
+            • Decide your favorite Beardo and use buttons on this site to donate to that style.<br />
             • Follow us here and on FB and Instagram to track the excitement<br />
             • Pledge to push your Beard higher until the Final Showdown SHAVE on Saturday, June 25.<br />
             • We will host a Live Variety Show accepting pledges up until 5:00PM SHARP then we will tally the final pledges and Dave will be shaved LIVE. It’ll be a HOOT and all for a good cause.
