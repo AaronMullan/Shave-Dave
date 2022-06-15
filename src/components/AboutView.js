@@ -4,6 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 export default function AboutView() {
     return (
         <div id="about-view">
+          <h2>About Shave Dave</h2>
             <div className="announcement">
             <p><b>PLEASE READ BELOW FOR THE DONATION PROCESS SO YOUR PLEDGE WILL BE COUNTED TOWARD THE BEARD YOU CHOOSE. THE BEARD WITH THE MOST CONTRIBUTIONS MOVES ON TO THE NEXT ROUND.<br />
             <br />

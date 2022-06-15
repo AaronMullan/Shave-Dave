@@ -15,13 +15,16 @@ function App() {
   
   function changeViewHandler(pageName) {
     changeView(pageName);
+    document.querySelector("#scrollAnchor").scrollTop += 100;
+    document.querySelector("#scrollAnchor").scrollIntoView();
   }
 
   return (
     <div className="App">
-      <Header />
+      <Header changeViewHandler={changeViewHandler} view={view} />
       <div className="body">
-        <main role="main">
+        <div id="scrollAnchor"></div>
+        <main id="main" role="main">
           {/* <NavTabs changeViewHandler={changeViewHandler} view={view} /> */}
           {view === "donate" ? <DonateView /> : 
             view === "event" ? <EventView /> : 
