@@ -77,7 +77,7 @@ export default function ChartView() {
             </div>
             <br />
             <BeardChart beardsSortedByAmount={beardsSortedByAmount} isLoading={isLoading} />
-            <h3 id="notice">Donate to your favorite face-do at ShaveDave.org !</h3>
+            <h3 id="notice">Donate to your favorite Beardo at ShaveDave.org !</h3>
         </div>
     )
 }

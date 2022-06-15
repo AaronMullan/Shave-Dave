@@ -71,7 +71,7 @@ export default function DonateView() {
                 }
             </div>
             <br />
-            <h3 id="notice">Check out this year's face-do's, donate to your favorite, and then join our mailing list for updates.</h3>
+            <h3 id="notice">Check out this year's Beardos, donate to your favorite, and then join our mailing list for updates.</h3>
             <BeardDashboard beardsSortedByAmount={beardsSortedByAmount} isLoading={isLoading} />
         </div>
     )
