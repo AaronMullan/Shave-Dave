@@ -40,7 +40,7 @@ export default function EventView() {
                 </div>
                 <div className="col-12 col-sm-6 col-lg-4">
                     <a href="https://www.planlogicpromo.com/" target="_blank" rel="noopener noreferrer" >
-                        <img src={planLogic} alt="plan logic logo" />
+                        <img id="planlogic-logo" src={planLogic} alt="plan logic logo" />
                     </a>
                 </div>
                 <div className="col-12 col-sm-6 col-lg-4">

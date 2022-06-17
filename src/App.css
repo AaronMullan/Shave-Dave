@@ -1,23 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
+html {
+  scroll-behavior: smooth;
+}
+
 .App {
   min-height:100vh;
   text-align: center;
   display: flex;
   flex-direction:column;
   overflow: auto;
-  background: linear-gradient(rgb(241,209,0),rgb(241, 222, 98));
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   font-family: 'Montserrat', sans-serif;
-  padding: 2vh 2vw;
 }
 
 .body {
   margin: 0 auto;
   padding-bottom: 5vmax;
   color: #004eb3;
+  padding: 2vh 2vw;
 }
 
 header {
@@ -36,15 +39,24 @@ header {
 }
 
 .header-image {
-  width: 25%;
-  min-width: 150px;
-  max-width: 400px;
+  width: 45%;
   height: auto;
 }
 nav {
-  margin:5vh 0 !important;
   justify-content: center;
   color:black;
+  background-color:rgb(241,209,0);
+}
+.navbar .container {
+  flex-wrap: nowrap;
+}
+.navbar-brand {
+  display: flex;
+}
+#hero-img {
+  box-sizing: border-box;
+  padding:1vh 1vw;
+  width:100vw;
 }
 li {
   text-align: start;
@@ -74,7 +86,7 @@ li {
   flex-direction:row;
   color:black;
   align-items: center;
-  background-color: rgba(255, 255, 255, 0.596);
+  background-color: rgba(0, 100, 255, 0.2);
   border-radius:15px;
 }
 .beard-row > * {
@@ -306,6 +318,22 @@ label {
     color:blue
   }
 
+  #landing-buttons button {
+    border:none;
+    background-color: #ffffff;
+    color: navy;
+    font-weight:bold;
+    padding:0;
+  }
+
+  .active {
+    font-weight: bold;
+  }
+
+  #planlogic-logo {
+    background-color: #7abaf2;
+  }
+
 @media (min-width: 565px) {
   .announcement {
     margin: 0 5vw;
@@ -335,10 +363,12 @@ label {
     font-size: 1.5rem;
   }
   .header-image {
-    width: 15%;
-    min-width: 200px;
-    max-width: 40vh;
-    max-height: 40vh;
+    width: 20%;
+  }
+  #hero-img {
+    max-width:80%;
+    margin:0 auto;
+    height:auto;
   }
   .announcement {
     padding: 10vh 0;
@@ -356,7 +386,7 @@ label {
   #email-form {
     margin: 10vh 0;
     padding: 10vh;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     border-radius: 15px;
     background-color: rgba(255, 255, 255, 0.551)
   }
