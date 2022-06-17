@@ -25,9 +25,9 @@ export default function Header(props) {
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="me-auto">
-                    <Nav.Link id="landing-tab" onClick={() => changeViewHandler("landing")} className="active" >Landing</Nav.Link>
+                    <Nav.Link id="landing-tab" onClick={() => changeViewHandler("landing")} className="active" >Home</Nav.Link>
                     <Nav.Link id="donate-tab" onClick={() => changeViewHandler("donate")} >Donate</Nav.Link>
-                    <Nav.Link id="event-tab" onClick={() => changeViewHandler("event")}>Live Event</Nav.Link>
+                    <Nav.Link id="event-tab" onClick={() => changeViewHandler("event")}>June 25 Event</Nav.Link>
                     <Nav.Link id="about-tab" onClick={() => changeViewHandler("about")}>About</Nav.Link>
                     <Nav.Link id="chart-tab" onClick={() => changeViewHandler("chart")}>Chart View</Nav.Link>
                 </Nav>

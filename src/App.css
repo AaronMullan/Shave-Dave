@@ -284,10 +284,16 @@ label {
     height:75vh;
   }
 
-  .landing-buttons {
+  #landing-buttons button {
     border:none;
     background-color: #ffffff;
+    color: navy;
+    font-weight:bold;
     padding:0;
+  }
+
+  .active {
+    font-weight: bold;
   }
 
 @media (min-width: 565px) {
@@ -342,7 +348,7 @@ label {
   #email-form {
     margin: 10vh 0;
     padding: 10vh;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     border-radius: 15px;
     background-color: rgba(255, 255, 255, 0.551)
   }
