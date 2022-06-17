@@ -32,7 +32,6 @@ export default function LandingView({changeViewHandler}) {
                 <li><button onClick={() => changeViewHandler("sponsors")}>Visit our Sponsors</button></li>
                 <li><button onClick={() => changeViewHandler("chart")}>Keep watching the chart</button> and give your favorite beardo a boost to keep it on top</li>
             </ol>
-
         </>
     );
 }
