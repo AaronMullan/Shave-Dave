@@ -64,7 +64,6 @@ function BeardRow({ beard, topAmount, isLoading }) {
               <ButtonWrapper
                 currency={"USD"}
                 beardName={beard.name}
-                suggestedAmount={suggestedAmount}
               />
             </div>
           </div>
