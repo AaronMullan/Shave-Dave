@@ -4,11 +4,11 @@ import {
   usePayPalScriptReducer,
 } from "@paypal/react-paypal-js";
 
-export const ButtonWrapper = ({ currency, beardName, suggestedAmount }) => {
+export const ButtonWrapper = ({ currency, beardName }) => {
   // usePayPalScriptReducer can be use only inside children of PayPalScriptProviders
   // This is the main reason to wrap the PayPalButtons in a new component
   const [{ options }, dispatch] = usePayPalScriptReducer();
-  const [ donationAmount, changeAmount ] = useState(suggestedAmount);
+  const [ donationAmount, changeAmount ] = useState(0);
 
   useEffect(() => {
     dispatch({
@@ -23,7 +23,7 @@ export const ButtonWrapper = ({ currency, beardName, suggestedAmount }) => {
 
   return (
       <>
-      <input type="number" placeholder={suggestedAmount} id={`${beardName}-amount`} name={`${beardName}-amount`} onChange={() => changeAmount(document.getElementById(`${beardName}-amount`).value)}></input>
+      <input type="number" id={`${beardName}-amount`} name={`${beardName}-amount`} onChange={() => changeAmount(document.getElementById(`${beardName}-amount`).value)}></input>
         <PayPalButtons
       fundingSource="paypal"
       style={{ layout: "vertical", label: "donate" }}
