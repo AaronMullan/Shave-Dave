@@ -12,7 +12,7 @@ import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
-  const [ view, changeView ] = useState("event");
+  const [ view, changeView ] = useState("landing");
   
   function changeViewHandler(pageName) {
     changeView(pageName);
