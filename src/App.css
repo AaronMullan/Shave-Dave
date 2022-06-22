@@ -333,6 +333,15 @@ label {
   #planlogic-logo {
     background-color: #7abaf2;
   }
+  
+  .performers, .vendor-logos {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .performers > div > a > img, .performers > div > img, .vendor-logos > div > a > img {
+    width:100%;
+  }
 
 @media (min-width: 565px) {
   .announcement {
@@ -344,6 +353,10 @@ label {
     grid-column: 7/10;
     font-size: calc(8px + 6 * ((100vw - 320px) / 680));
     padding: 2vw 4vw;
+  }
+  .performers > div, .vendor-logos > div {
+    width:50%;
+    padding:1rem;
   }
 }
 
@@ -461,5 +474,8 @@ label {
   }
   .beardChart-name {
     font-size: large;
+  }
+  .performers > div, .vendor-logos > div {
+    width:33%;
   }
 }
