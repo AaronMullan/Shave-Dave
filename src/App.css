@@ -339,7 +339,7 @@ label {
     flex-wrap: wrap;
   }
 
-  .performers > div > a > img, .vendor-logos > div > a > img {
+  .performers > div > a > img, .performers > div > img, .vendor-logos > div > a > img {
     width:100%;
   }
 

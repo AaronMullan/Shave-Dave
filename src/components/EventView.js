@@ -29,16 +29,16 @@ export default function EventView() {
               </a>
             </div>
             <div id="tiptop-trio">
-              <a href="" >
+              {/* <a href="" > */}
                 <img className="performer-photo" src={music} alt="Tiptop Trio"></img>
                 <h4>Tiptop Trio</h4>
-              </a>
+              {/* </a> */}
             </div>
             <div id="hipster">
-              <a href="" >
+              {/* <a href="" > */}
                 <img className="performer-photo" src={music} alt="The Hipster Project"></img>
                 <h4>The Hipster Project</h4>
-              </a>
+              {/* </a> */}
             </div>
             <div id="erin-patrick">
               <a href="https://www.erinpatrickcomedy.com/" target="_blank" rel="noopener noreferrer" >
@@ -53,10 +53,10 @@ export default function EventView() {
               </a>
             </div>
             <div id="noah">
-              <a href="" >
+              {/* <a href="" > */}
                 <img className="performer-photo" src={music} alt="Noah Mitchell"></img>
                 <h4>Noah Mitchel</h4>
-              </a>
+              {/* </a> */}
             </div>
             <div id="joel">
               <a href="http://thenewmandolin.com/" target="_blank" rel="noopener noreferrer" >
@@ -70,11 +70,11 @@ export default function EventView() {
                 <h4>Dan Haas</h4>
               </a>
             </div>
-            <div id="">
-              <a href="" >
+            <div id="herbert">
+              {/* <a href="" > */}
                 <img className="performer-photo" src={music} alt="Herbert Frank"></img>
                 <h4>Herbert Frank</h4>
-              </a>
+              {/* </a> */}
             </div>
           </div>
           <br></br>
