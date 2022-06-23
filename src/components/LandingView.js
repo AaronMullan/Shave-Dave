@@ -24,7 +24,7 @@ export default function LandingView({changeViewHandler}) {
             <h1>Shave Event Livestream</h1>
             <div className="stream-embed" style={{position:"relative"}} >
             {/* <div className="stream-embed" style={{padding:56.25% 0 0 0,position:relative}} > */}
-                <iframe src="https://player.restream.io/?token=c3a0b2c6c1f545568a8c8e408d7c394c&vwrs=1" allow="autoplay" allowfullscreen frameborder="0" style={{position:"absolute",top:0,left:0,width:100+"%",height:100+"%"}} ></iframe>
+                <iframe title="livestream-embed" src="https://player.restream.io/?token=c3a0b2c6c1f545568a8c8e408d7c394c&vwrs=1" allow="autoplay" allowfullscreen frameborder="0" style={{position:"absolute",top:0,left:0,width:100+"%",height:100+"%"}} ></iframe>
                 {/* <iframe src="https://player.restream.io/?token=c3a0b2c6c1f545568a8c8e408d7c394c&vwrs=1" allow="autoplay" allowfullscreen frameborder="0" style={{position:"absolute",top:0,left:0,width:100+"%",height:100+"%"}} ></iframe> */}
             </div>
 
