@@ -350,6 +350,9 @@ label {
   .header-image-small {
     height:5vh;
   }
+  .beard-name-jumbo {
+    display: none;
+  }
 
 @media (min-width: 565px) {
   .announcement {
@@ -456,7 +459,21 @@ label {
     height:100%;
     margin: auto;
     display:inline-block;
-    padding:3vh 0;
+    font-size: 5rem;
+    font-weight:bold;
+    padding:0.5vh;
+  }
+  .beardChart-name {
+    display: none;
+  }
+  .beard-name-jumbo {
+    margin: 0;
+    display:block;
+    width:14vw;
+  }
+  .beard-name-jumbo h4 {
+    font-size:3rem;
+    width:14vw;
   }
   .donate-button-container {
     height:18vh;
@@ -479,7 +496,7 @@ label {
     text-align: left;
   }
   .beardChart-icon-container, .icon-and-name {
-    width:15vw;
+    width:8vw;
   }
   .chart-container {
     width:75vw;

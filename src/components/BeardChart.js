@@ -35,6 +35,9 @@ function BeardRow({ beard, topAmount, isLoading }) {
             </div>
             <h4 className="beardChart-name">{beard.name}</h4>
           </div>
+          <div className="beard-name-jumbo">
+            <h4>{beard.name}</h4>
+          </div>
           <div
             className="chart-container"
           >
