@@ -1,54 +1,15 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import BeardDashboard from "./BeardDashboard";
 import GoalMeter from "./GoalMeter";
 import beardStyles from "../beards-array";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-export default function DonateView() {
-    const [ isLoading, updateLoading ] = useState(true);
-    const [ loop, setLoop ] = useState();
-    const [ amounts, getAmounts ] = useState({
-        anchor:0,
-        crab:0,
-        clean:0,
-        dubStache:0
-    });
-
-    function getBeardAmount (result, beardType) {
-        return result.donations.filter(data => data.beardVote === beardType).map(data => data.amount).reduce((a, b) => a + b, 0);
-    }
+export default function DonateView({isLoading, amounts}) {
+    const beardsWithAmounts = beardStyles.map(beard => {return { ...beard, amount:amounts[beard.jsName]}});
+    const beardsSortedByAmount = beardsWithAmounts.sort(function(a, b){return b.amount - a.amount});
     function getTotalAmount () {
         return amounts.anchor + amounts.crab + amounts.clean + amounts.dubStache;
     }
-
-    useEffect(() => {
-        setLoop(
-            setInterval(() => {
-                fetch("https://shave-dave-server.herokuapp.com/api/donations/")
-                .then(res => res.json())
-                .then(
-                    (result) => { 
-                        console.log(result);
-                        getAmounts({
-                            clean: getBeardAmount(result, "Clean Shaven") + getBeardAmount(result, "Clean Shave"),
-                            anchor: getBeardAmount(result, "Odesa Anchor"),
-                            crab: getBeardAmount(result, "Bmore Crab"),
-                            dubStache: getBeardAmount(result, "Double Stache")
-                        });
-                        updateLoading(false);
-                    }
-                )
-            }, 10000)
-        );
-
-        return function cleanup() {
-            clearInterval(loop);
-        }
-        // eslint-disable-next-line
-    }, [amounts])
-
-    const beardsWithAmounts = beardStyles.map(beard => {return { ...beard, amount:amounts[beard.jsName]}});
-    const beardsSortedByAmount = beardsWithAmounts.sort(function(a, b){return b.amount - a.amount});
 
     return (
         <div id="donate-view">
