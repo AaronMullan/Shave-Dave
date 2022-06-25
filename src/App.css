@@ -343,6 +343,11 @@ label {
     width:100%;
   }
 
+  .stream-embed {
+    width:100%;
+    height:50vh;
+  }
+
 @media (min-width: 565px) {
   .announcement {
     margin: 0 5vw;
@@ -474,6 +479,10 @@ label {
   }
   .beardChart-name {
     font-size: large;
+  }
+  .stream-embed {
+    width:100%;
+    height:80vh;
   }
   .performers > div, .vendor-logos > div {
     width:33%;
