@@ -347,6 +347,9 @@ label {
     width:100%;
     height:50vh;
   }
+  .header-image-small {
+    height:5vh;
+  }
 
 @media (min-width: 565px) {
   .announcement {
@@ -362,6 +365,10 @@ label {
   .performers > div, .vendor-logos > div {
     width:50%;
     padding:1rem;
+  }
+  .header-image {
+    width: 20%;
+    height: auto;
   }
 }
 

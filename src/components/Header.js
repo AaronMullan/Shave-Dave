@@ -4,8 +4,7 @@ import logo from "../pix/2022-logo-fullscreen.JPG";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 
-export default function Header(props) {
-    const {changeViewHandler, view} = props;
+export default function Header({changeViewHandler, view}) {
 
     useEffect(() => {
         document.querySelector(`.active`).classList.toggle("active");
@@ -19,7 +18,7 @@ export default function Header(props) {
                     <img
                         src={logo}
                         alt="Shave Dave Covid-19 Relief"
-                        className="header-image"
+                        className={view === "landing" ? "header-image" : "header-image-small"}
                     />
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
