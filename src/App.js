@@ -12,14 +12,15 @@ import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
-  const [ view, changeView ] = useState("landing");
+  const [ view, changeView ] = useState("donate");
   const [ isLoading, updateLoading ] = useState(true);
   const [ loop, setLoop ] = useState();
   const [ amounts, getAmounts ] = useState({
       anchor:0,
       crab:0,
       clean:0,
-      dubStache:0
+      dubStache:0,
+      postEvent:0
   });
 
   function getBeardAmount (result, beardType) {
@@ -38,7 +39,8 @@ function App() {
                           clean: getBeardAmount(result, "Clean Shaven") + getBeardAmount(result, "Clean Shave"),
                           anchor: getBeardAmount(result, "Odesa Anchor"),
                           crab: getBeardAmount(result, "Bmore Crab"),
-                          dubStache: getBeardAmount(result, "Double Stache")
+                          dubStache: getBeardAmount(result, "Double Stache"),
+                          postEvent: getBeardAmount(result, "post-event")
                       });
                       updateLoading(false);
                   }

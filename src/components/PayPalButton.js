@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import {
   PayPalButtons,
-  usePayPalScriptReducer,
+  usePayPalScriptReducer
 } from "@paypal/react-paypal-js";
 
 export const ButtonWrapper = ({ currency, beardName }) => {
