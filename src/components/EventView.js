@@ -135,10 +135,64 @@ export default function EventView() {
           </div>
           <br></br>
 
+          <h3>Crew and Volunteer Acknowledgements</h3>
+          <h4>Tech Crew</h4>
+          <ul>
+          <li><a href="https://danzhaas.github.io/" target="_blank" rel="noopener noreferrer" >Dan Z Haas</a></li>
+          <li>Gus Sentementes</li>
+          <li>Max Bent</li>
+          <li>Mike Piet</li>
+          <li>Aaron Mullan</li>
+          </ul>
+          <h4>Art & Marketing Crew</h4>
+          <ul>
+          <li>Dan Moyer</li>
+          <li>David C Mies</li>
+          <li>Garland Griswold</li>
+          <li>Angi Jordan</li>
+          <li>Bobby Jordan</li>
+          </ul>
+          <h4>Emcees</h4>
+          <ul>
+          <li>Jess Kupper</li>
+          <li>Calvin Skelton</li>
+          </ul>
+          <h4>Volunteers</h4>
+          <ul>
+          <li>Karina Mandell</li>
+          <li>Kerry Spence</li>
+          <li>Tom Creegan</li>
+          <li>Daniel Doty</li>
+          <li>Julie Lin</li>
+          <li>Spilly Andreas</li>
+          <li>Krista Cushman</li>
+          <li>Nancy Cushman</li>
+          <li>Pat Mogge</li>
+          <li>Elena Sentementes</li>
+          <li>Karen Sentementes</li>
+          <li>Olivia Sentementes</li>
+          <li>Evan Sentementes</li>
+          <li>Lisa Egan</li>
+          <li>Sean Egan</li>
+          <li>Randy Cain</li>
+          </ul>
+          <h4>Key Brewing Crew</h4>
+          <ul>
+          <li>Mark Cassin</li>
+          <li>Jef Walker</li>
+          <li>Mike Kulnich</li>
+          <li>Victor </li>
+          <li>Noah?</li>
+          <li>Earl the Cellarman</li>
+          <li>Amber</li>
+          <li>Mike</li>
+          </ul>
+          <br></br>
+
           <h3>Details</h3>
           <iframe title="eventbrite" src="https://www.eventbrite.com/e/shaveday2022-for-ukrainian-crisis-relief-saturday-june-25-2-6pm-tickets-359537284697"></iframe>
 
-          <h3>We'll see you there!</h3>
+          <h3>Thanks for coming!</h3>
         </div>
     )
 }
