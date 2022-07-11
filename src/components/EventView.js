@@ -1,10 +1,11 @@
 import React from "react";
 import music from '../pix/performers/music.jpg'
 import quintonRandall from '../pix/performers/quinton-randall.jpg'
-import erinPatrick from '../pix/performers/erin-patrick.jpg'
+import ptBratton from '../pix/performers/pt-bratton.jpg'
 import christianMccartney from '../pix/performers/christian-mccartney.jpg'
 import theOtherDan from '../pix/performers/the-other-dan-haas.jpg'
 import joel from '../pix/performers/joel.jpg'
+import aniya from "../pix/performers/aniya.jpg";
 import casaFiglia from "../pix/casa-figlia.png";
 import franksBbq from "../pix/franks-bbq.png";
 import keyBrewing from "../pix/key-brewing.png";
@@ -42,10 +43,10 @@ export default function EventView() {
                 <h4>The Hipster Project</h4>
               {/* </a> */}
             </div>
-            <div id="erin-patrick">
-              <a href="https://www.erinpatrickcomedy.com/" target="_blank" rel="noopener noreferrer" >
-                <img className="performer-photo" src={erinPatrick} alt="Erin Patrick"></img>
-                <h4>Erin Patrick</h4>
+            <div id="bratton">
+              <a href="https://www.ptbratton.com/" target="_blank" rel="noopener noreferrer" >
+                <img className="performer-photo" src={ptBratton} alt="PT Bratton"></img>
+                <h4>PT Bratton</h4>
               </a>
             </div>
             <div id="chrstian-mccartney">
@@ -72,11 +73,24 @@ export default function EventView() {
                 <h4>Dan Haas</h4>
               </a>
             </div>
+            <div id="geoff">
+              {/* <a href="https://danhaas.bandcamp.com/releases" target="_blank" rel="noopener noreferrer" > */}
+                <img className="performer-photo" src={music} alt="Geoffrey Welchman"></img>
+                <h4>Geoffrey Welchman</h4>
+              {/* </a> */}
+            </div>
             <div id="herbert">
               {/* <a href="" > */}
                 <img className="performer-photo" src={music} alt="Herbert Frank"></img>
                 <h4>Herbert Frank</h4>
               {/* </a> */}
+            </div>
+            <div id="aniya">
+              <a href="https://instagram.com/_aniyataylor?igshid=YmMyMTA2M2Y=" target="_blank" rel="noopener noreferrer" >
+                <img className="performer-photo" src={aniya} alt="Aniya Taylor"></img>
+                <h4>Aniya Taylor</h4>
+                <i>Baltimore Youth Poet Laureate 2021</i>
+              </a>
             </div>
           </div>
           <br></br>
