@@ -10,6 +10,8 @@ import franksBbq from "../pix/franks-bbq.png";
 import keyBrewing from "../pix/key-brewing.png";
 import redCanoe from "../pix/red-canoe.jpg";
 import tortugaKombucha from "../pix/tortuga-kombucha.png";
+import lolaAndMimi from "../pix/lola-and-mimi.png";
+import boordy from "../pix/boordy.png";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 export default function EventView() {
@@ -104,6 +106,16 @@ export default function EventView() {
             <div >
                 <a href="https://www.redcanoecafeandchildrensbookstore.com/" target="_blank" rel="noopener noreferrer" >
                     <img src={redCanoe} alt="tortuga kombucha logo" />
+                </a>
+            </div>
+            <div >
+                <a href="https://m.facebook.com/LolaAndMimi/" target="_blank" rel="noopener noreferrer" >
+                    <img src={lolaAndMimi} alt="lola and mimi logo" />
+                </a>
+            </div>
+            <div >
+                <a href="https://www.boordy.com/" target="_blank" rel="noopener noreferrer" >
+                    <img src={boordy} alt="boordy logo" />
                 </a>
             </div>
           </div>

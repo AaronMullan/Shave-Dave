@@ -12,7 +12,7 @@ import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
-  const [ view, changeView ] = useState("donate");
+  const [ view, changeView ] = useState("landing");
   const [ isLoading, updateLoading ] = useState(true);
   const [ loop, setLoop ] = useState();
   const [ amounts, getAmounts ] = useState({
