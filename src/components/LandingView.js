@@ -29,13 +29,13 @@ export default function LandingView({changeViewHandler}) {
             <h2>What's New</h2>
             <iframe title="fb-page" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FShaveDaveBmore&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=3467280413296363" width="340" height="500" style={{border:"none",overflow:"hidden",margin:"0 auto",width:"340px"}} scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
 
-            <h1>How should we Shave Dave?</h1>
+            <h1>Dave has been shaved for 2022!</h1>
             <ol id="landing-buttons">
                 <li><button onClick={() => changeViewHandler("about")}>Learn about Shave Dave</button> and the charities we're helping this year</li>
-                <li><button onClick={() => changeViewHandler("donate")}>Donate to your favorite beardo</button></li>
-                <li><button onClick={() => changeViewHandler("event")}>Shave the Date:</button> the live Shave event is Saturday, June 25</li>
-                <li><button onClick={() => changeViewHandler("sponsors")}>Visit our Sponsors</button></li>
-                <li><button onClick={() => changeViewHandler("chart")}>Keep watching the chart</button> and give your favorite beardo a boost to keep it on top</li>
+                <li><button onClick={() => changeViewHandler("donate")}>Donate to the cause</button> - we're still collecting because Ukraine still needs our support!</li>
+                <li><button onClick={() => changeViewHandler("chart")}>See the Beardo vote results</button> - it was close</li>
+                <li><button onClick={() => changeViewHandler("event")}>Shave the Date:</button> the live Shave event already happened but a livestream highlight reel is coming (date TBA)!  Stay tuned</li>
+                <li><button onClick={() => changeViewHandler("sponsors")}>Visit our Sponsors</button> who made it all possible</li>
             </ol>
         </>
     )
