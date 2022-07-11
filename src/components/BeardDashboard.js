@@ -2,12 +2,12 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function BeardRow({ beard, topAmount, isLoading }) {
-  const suggestedAmount =
-    beard.amount === topAmount ? 50 : topAmount - beard.amount + 1;
-  const suggestedMessage =
-    beard.amount === topAmount
-      ? "$50 would help defend first!"
-      : `$${suggestedAmount} to take first!`;
+  // const suggestedAmount =
+  //   beard.amount === topAmount ? 50 : topAmount - beard.amount + 1;
+  // // const suggestedMessage =
+  // //   beard.amount === topAmount
+  // //     ? "$50 would help defend first!"
+  // //     : `$${suggestedAmount} to take first!`;
 
   return (
     <div className="beard-row" id={`beard-row-${beard.jsName}`}>

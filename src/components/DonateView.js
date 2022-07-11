@@ -1,16 +1,16 @@
 import React from "react";
-import BeardDashboard from "./BeardDashboard";
+// import BeardDashboard from "./BeardDashboard";
 import GoalMeter from "./GoalMeter";
 import {
     PayPalScriptProvider
   } from "@paypal/react-paypal-js";
 import { ButtonWrapper } from "./PayPalButton";
-import beardStyles from "../beards-array";
+// import beardStyles from "../beards-array";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 export default function DonateView({isLoading, amounts}) {
-    const beardsWithAmounts = beardStyles.map(beard => {return { ...beard, amount:amounts[beard.jsName]}});
-    const beardsSortedByAmount = beardsWithAmounts.sort(function(a, b){return b.amount - a.amount});
+    // const beardsWithAmounts = beardStyles.map(beard => {return { ...beard, amount:amounts[beard.jsName]}});
+    // const beardsSortedByAmount = beardsWithAmounts.sort(function(a, b){return b.amount - a.amount});
     function getTotalAmount () {
         return amounts.anchor + amounts.crab + amounts.clean + amounts.dubStache;
     }
