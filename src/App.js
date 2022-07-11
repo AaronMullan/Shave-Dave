@@ -33,8 +33,7 @@ function App() {
               fetch("https://shave-dave-server.herokuapp.com/api/donations/")
               .then(res => res.json())
               .then(
-                  (result) => { 
-                      console.log(result);
+                  (result) => {
                       getAmounts({
                           clean: getBeardAmount(result, "Clean Shaven") + getBeardAmount(result, "Clean Shave"),
                           anchor: getBeardAmount(result, "Odesa Anchor"),

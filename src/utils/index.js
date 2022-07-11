@@ -18,7 +18,6 @@ export function sendEmail({updateEmail}) {
     fetch(url, options)
         .then(res => res.json())
         .then(res => {
-            console.log(res);
             if (res.msg === "Email received") {
                 updateEmail("Good news, you're on our mailing list.  You'll hear from us soon.");
             } else {

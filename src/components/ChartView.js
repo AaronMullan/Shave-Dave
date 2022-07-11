@@ -9,7 +9,7 @@ export default function ChartView({isLoading, amounts}) {
     const beardsWithAmounts = beardStyles.map(beard => {return { ...beard, amount:amounts[beard.jsName]}});
     const beardsSortedByAmount = beardsWithAmounts.sort(function(a, b){return b.amount - a.amount});
     function getTotalAmount () {
-        return amounts.anchor + amounts.crab + amounts.clean + amounts.dubStache;
+        return amounts.anchor + amounts.crab + amounts.clean + amounts.dubStache + amounts.postEvent;
     }
 
     return (
