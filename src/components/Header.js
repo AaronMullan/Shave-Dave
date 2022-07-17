@@ -26,6 +26,7 @@ export default function Header({changeViewHandler, view}) {
                 <Nav className="me-auto">
                     <Nav.Link id="landing-tab" onClick={() => changeViewHandler("landing")} className="active" >Home</Nav.Link>
                     <Nav.Link id="about-tab" onClick={() => changeViewHandler("about")}>About</Nav.Link>
+                    <Nav.Link id="photos-tab" onClick={() => changeViewHandler("photos")} >Photos</Nav.Link>
                     <Nav.Link id="chart-tab" onClick={() => changeViewHandler("chart")}>Results</Nav.Link>
                     <Nav.Link id="donate-tab" onClick={() => changeViewHandler("donate")} >Donate</Nav.Link>
                     <Nav.Link id="event-tab" onClick={() => changeViewHandler("event")}>Events</Nav.Link>

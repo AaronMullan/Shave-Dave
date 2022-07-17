@@ -21,13 +21,8 @@ export default function LandingView({changeViewHandler}) {
             </div>
             <h2><a href="https://www.instagram.com/explore/tags/shavedave2022/" target="_blank" rel="noopener noreferrer">#shavedave2022</a></h2>
 
-            {/* <h1>Shave Event Livestream</h1>
-            <div className="stream-embed" style={{position:"relative"}} >
-                <iframe title="livestream-embed" src="https://player.restream.io/?token=c3a0b2c6c1f545568a8c8e408d7c394c&vwrs=1" allow="autoplay" allowfullscreen frameborder="0" style={{position:"absolute",top:0,left:0,width:100+"%",height:100+"%"}} ></iframe>
-            </div> */}
-
             <h2>What's New</h2>
-            <iframe title="fb-page" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FShaveDaveBmore&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=3467280413296363" width="340" height="500" style={{border:"none",overflow:"hidden",margin:"0 auto",width:"340px"}} scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+            <iframe title="fb-page" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FShaveDaveBmore&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=3467280413296363" width="340" height="500" style={{border:"none",overflow:"hidden",margin:"0 auto",width:"340px"}} scrolling="no" frameBorder="0" allowFullScreen={true} allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
 
             <h1>Dave has been shaved for 2022!</h1>
             <ol id="landing-buttons">

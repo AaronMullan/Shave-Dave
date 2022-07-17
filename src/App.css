@@ -360,6 +360,9 @@ label {
   #post-event-amount {
     border: 1px solid blue;
   }
+  .fb-post-embeds iframe {
+    margin: 0 auto 2rem auto
+  }
 
 @media (min-width: 565px) {
   .announcement {

@@ -3,6 +3,7 @@ import Header from "./components/Header"
 import DonateView from "./components/DonateView";
 import EventView from "./components/EventView";
 import AboutView from "./components/AboutView";
+import PhotosView from "./components/PhotosView";
 import ChartView from "./components/ChartView";
 import LandingView from "./components/LandingView";
 import SponsorsView from "./components/SponsorsView";
@@ -72,6 +73,7 @@ function App() {
             view === "event" ? <EventView /> : 
             view === "chart" ? <ChartView isLoading={isLoading} amounts={amounts} /> : 
             view === "sponsors" ? <SponsorsView /> : 
+            view === "photos" ? <PhotosView /> : 
             <AboutView /> }
           <EmailForm />
         </main>
