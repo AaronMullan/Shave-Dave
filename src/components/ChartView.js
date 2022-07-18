@@ -32,7 +32,6 @@ export default function ChartView({isLoading, amounts}) {
                 <>
                     <h2>Total Raised toward Goal of $25,000:</h2>
                     <GoalMeter totalAmount={getTotalAmount()}/>
-                    <p> as of {new Date().toDateString()} at {new Date().toLocaleTimeString()}</p>
                 </>
                 }
             </div>

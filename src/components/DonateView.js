@@ -22,7 +22,9 @@ export default function DonateView({isLoading, amounts}) {
                         <span className="visually-hidden"></span>
                     </div>
                 :
-                    <GoalMeter totalAmount={getTotalAmount()}/>
+                    <>
+                        <GoalMeter totalAmount={getTotalAmount()}/>
+                    </>
                 }
             </div>
             <br />

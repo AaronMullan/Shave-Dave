@@ -1,6 +1,5 @@
 import React from "react";
 import odesaLogo from "../pix/odesa-logo-trans.png";
-import hlmsLogo from "../pix/hlms-trans.png";
 import heroImg from "../pix/hero.png";
 
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -14,9 +13,6 @@ export default function LandingView({changeViewHandler}) {
             <div className="benefit-logos">
                 <a id="odesa" href="https://www.baltimoreodesa.org/" target="_blank" rel="noopener noreferrer">
                     <img className="charity-logo" src={odesaLogo} alt="Baltimore Sister City Odesa Logo" />
-                </a>
-                <a id="hlms" href="https://www.bmoremainstreet.com/home" target="_blank" rel="noopener noreferrer">
-                    <img className="charity-logo" src={hlmsLogo} alt="Hamilton Lauraville Main Street Logo" />
                 </a>
             </div>
             <h2><a href="https://www.instagram.com/explore/tags/shavedave2022/" target="_blank" rel="noopener noreferrer">#shavedave2022</a></h2>
