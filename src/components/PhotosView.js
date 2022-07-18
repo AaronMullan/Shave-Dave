@@ -9,7 +9,7 @@ export default function PhotosView() {
         <h3>See these highlights from our awesome Shave Day 2022 and afterwards</h3>  
       </div>
       <div className="fb-post-embeds">
-        <h4>Dave sporting the Double Stache after the "shave" with Baltimore Odesa Sister Cities spokesperson Karina Mandell</h4>
+        <h4>Dave sporting the Double Stache after the "shave" with Baltimore Odesa Sister Cities Chairwoman Karina Mandell</h4>
           <a href="https://www.facebook.com/photo.php?fbid=10225501548138036&set=a.1879819267650&type=3">
             <iframe title="dave-and-karina" src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FShaveDaveBmore%2Fposts%2Fpfbid02PcbSRLUf9oBnDqePQhg6Ff7DtyLDsUXqE9bq3m4X7s4TMJxtF6pYWMXebgzd4GLyl&show_text=true&width=500" width="500" height="498" style={{border:"none", overflow:"hidden"}} scrolling="no" frameBorder="0" allowFullScreen={true} allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
           </a>
