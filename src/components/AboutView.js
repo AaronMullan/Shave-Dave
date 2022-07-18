@@ -14,13 +14,27 @@ export default function AboutView() {
           raise money for Tsunami Relief in Japan. We subsequently ran several
           successful fundraisers for The National MS Society until Dave retired
           from the bar business in 2015. The COVID-19 Virus is forced the beard
-          out of retirement in 2020. This year we will be raising money for the
-          non-profit Baltimore Sister City Odesa to provide assistance to
-          citizens of Ukraine so adversely affected by the crisis there. We will
-          also be donating money to Hamilton-Lauraville Main Street.
+          out of retirement in 2020. 
+          <br />
+          <br />
+          This year we will be raising money for the
+          non-profit             <a
+              id="odesa"
+              href="https://www.baltimoreodesa.org/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Baltimore Sister City Odesa (BOSCC)
+            </a> to provide assistance to
+          citizens of Ukraine so adversely affected by the crisis there. 
+          Donations made before 7/17/22 are donated largely to BOSCC and also to Hamilton-Lauraville Main Street.
+          Donations made after 7/17/22 thru this site will go directly towards BOSCC.  
           (Hamilton-Lauraville Main Street and Baltimore Sister Cities, Inc are
           public charities recognized as tax-exempt by the IRS under Section
-          501(c)(3).)  This year will be in person at The 4500 Lot at
+          501(c)(3).)  
+          <br />
+          <br />
+          This year will be in person at The 4500 Lot at
           Hamilton-Lauraville Main Street and livestreamed here and on other
           social media platforms. The shave will be held on Saturday, June 25,
           2022.
@@ -41,15 +55,6 @@ export default function AboutView() {
             >
               BALTIMORE SISTER CITY ODESA
             </a>{" "}
-            and{" "}
-            <a
-              id="hlms"
-              href="https://www.bmoremainstreet.com/home"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              HAMILTON-LAURAVILLE MAIN STREET
-            </a>
           </b>
           <br />
         </p>

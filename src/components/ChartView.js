@@ -9,17 +9,14 @@ export default function ChartView({isLoading, amounts}) {
     const beardsWithAmounts = beardStyles.map(beard => {return { ...beard, amount:amounts[beard.jsName]}});
     const beardsSortedByAmount = beardsWithAmounts.sort(function(a, b){return b.amount - a.amount});
     function getTotalAmount () {
-        return amounts.anchor + amounts.crab + amounts.clean + amounts.dubStache;
+        return amounts.anchor + amounts.crab + amounts.clean + amounts.dubStache + amounts.postEvent;
     }
 
     return (
         <div id="chart-view">
-            <h2>How should we Shave Dave?  Donate to vote.  Voting ends Saturday, June 25 at 5 PM!</h2>
-            <ul id="instructions">
-                <li>Decide your favorite Beard and donate to that style.</li>
-                <li>Follow us on FB and Instagram to track the leader.</li>
-                <li>Tune in or show up to the Live Variety Show June 25 where Dave will be shaved LIVE.</li>
-            </ul>
+            <h2>2022 Beardo Vote Results</h2>
+            <h4 id="notice">The people have spoken with their pledges.  We have Shaved Dave for 2022! And the winning Beardo is… The DoubleStache! If you already pledged, Thank You! If you haven’t, we are still accepting donations! Thank You & Stay Tuned!!!</h4>
+            <br></br>
             <div id="chart-total">
                 { isLoading ? 
                 <>
@@ -35,13 +32,13 @@ export default function ChartView({isLoading, amounts}) {
                 <>
                     <h2>Total Raised toward Goal of $25,000:</h2>
                     <GoalMeter totalAmount={getTotalAmount()}/>
-                    <p> as of {new Date().toDateString()} at {new Date().toLocaleTimeString()}</p>
                 </>
                 }
             </div>
             <br />
+            <h2>Final Votes</h2>
             <BeardChart beardsSortedByAmount={beardsSortedByAmount} isLoading={isLoading} />
-            <h3 id="notice">Donate to your favorite Beardo at ShaveDave.org !</h3>
+            <h3 id="notice">The voting is over, but Ukraine still needs our support!  Please continue to Donate :)</h3>
         </div>
     )
 }

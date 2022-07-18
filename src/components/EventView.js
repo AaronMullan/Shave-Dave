@@ -1,15 +1,18 @@
 import React from "react";
 import music from '../pix/performers/music.jpg'
 import quintonRandall from '../pix/performers/quinton-randall.jpg'
-import erinPatrick from '../pix/performers/erin-patrick.jpg'
+import ptBratton from '../pix/performers/pt-bratton.jpg'
 import christianMccartney from '../pix/performers/christian-mccartney.jpg'
 import theOtherDan from '../pix/performers/the-other-dan-haas.jpg'
 import joel from '../pix/performers/joel.jpg'
+import aniya from "../pix/performers/aniya.jpg";
 import casaFiglia from "../pix/casa-figlia.png";
 import franksBbq from "../pix/franks-bbq.png";
 import keyBrewing from "../pix/key-brewing.png";
 import redCanoe from "../pix/red-canoe.jpg";
 import tortugaKombucha from "../pix/tortuga-kombucha.png";
+import lolaAndMimi from "../pix/lola-and-mimi.png";
+import boordy from "../pix/boordy.png";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 export default function EventView() {
@@ -40,10 +43,10 @@ export default function EventView() {
                 <h4>The Hipster Project</h4>
               {/* </a> */}
             </div>
-            <div id="erin-patrick">
-              <a href="https://www.erinpatrickcomedy.com/" target="_blank" rel="noopener noreferrer" >
-                <img className="performer-photo" src={erinPatrick} alt="Erin Patrick"></img>
-                <h4>Erin Patrick</h4>
+            <div id="bratton">
+              <a href="https://www.ptbratton.com/" target="_blank" rel="noopener noreferrer" >
+                <img className="performer-photo" src={ptBratton} alt="PT Bratton"></img>
+                <h4>PT Bratton</h4>
               </a>
             </div>
             <div id="chrstian-mccartney">
@@ -70,11 +73,24 @@ export default function EventView() {
                 <h4>Dan Haas</h4>
               </a>
             </div>
+            <div id="geoff">
+              {/* <a href="https://danhaas.bandcamp.com/releases" target="_blank" rel="noopener noreferrer" > */}
+                <img className="performer-photo" src={music} alt="Geoffrey Welchman"></img>
+                <h4>Geoffrey Welchman</h4>
+              {/* </a> */}
+            </div>
             <div id="herbert">
               {/* <a href="" > */}
                 <img className="performer-photo" src={music} alt="Herbert Frank"></img>
                 <h4>Herbert Frank</h4>
               {/* </a> */}
+            </div>
+            <div id="aniya">
+              <a href="https://instagram.com/_aniyataylor?igshid=YmMyMTA2M2Y=" target="_blank" rel="noopener noreferrer" >
+                <img className="performer-photo" src={aniya} alt="Aniya Taylor"></img>
+                <h4>Aniya Taylor</h4>
+                <i>Baltimore Youth Poet Laureate 2021</i>
+              </a>
             </div>
           </div>
           <br></br>
@@ -106,13 +122,77 @@ export default function EventView() {
                     <img src={redCanoe} alt="tortuga kombucha logo" />
                 </a>
             </div>
+            <div >
+                <a href="https://m.facebook.com/LolaAndMimi/" target="_blank" rel="noopener noreferrer" >
+                    <img src={lolaAndMimi} alt="lola and mimi logo" />
+                </a>
+            </div>
+            <div >
+                <a href="https://www.boordy.com/" target="_blank" rel="noopener noreferrer" >
+                    <img src={boordy} alt="boordy logo" />
+                </a>
+            </div>
           </div>
+          <br></br>
+
+          <h3>Crew and Volunteer Acknowledgements</h3>
+          <h4>Tech Crew</h4>
+          <ul>
+          <li><a href="https://danzhaas.github.io/" target="_blank" rel="noopener noreferrer" >Dan Z Haas</a></li>
+          <li>Gus Sentementes</li>
+          <li>Max Bent</li>
+          <li>Mike Piet</li>
+          <li>Aaron Mullan</li>
+          </ul>
+          <h4>Art & Marketing Crew</h4>
+          <ul>
+          <li>Dan Moyer</li>
+          <li>David C Mies</li>
+          <li>Garland Griswold</li>
+          <li>Angi Jordan</li>
+          <li>Bobby Jordan</li>
+          </ul>
+          <h4>Emcees</h4>
+          <ul>
+          <li>Jess Kupper</li>
+          <li>Calvin Skelton</li>
+          </ul>
+          <h4>Volunteers</h4>
+          <ul>
+          <li>Karina Mandell</li>
+          <li>Kerry Spence</li>
+          <li>Tom Creegan</li>
+          <li>Daniel Doty</li>
+          <li>Julie Lin</li>
+          <li>Spilly Andreas</li>
+          <li>Krista Cushman</li>
+          <li>Nancy Cushman</li>
+          <li>Pat Mogge</li>
+          <li>Elena Sentementes</li>
+          <li>Karen Sentementes</li>
+          <li>Olivia Sentementes</li>
+          <li>Evan Sentementes</li>
+          <li>Lisa Egan</li>
+          <li>Sean Egan</li>
+          <li>Randy Cain</li>
+          </ul>
+          <h4>Key Brewing Crew</h4>
+          <ul>
+          <li>Mark Cassin</li>
+          <li>Jef Walker</li>
+          <li>Mike Kulnich</li>
+          <li>Victor </li>
+          <li>Noah?</li>
+          <li>Earl the Cellarman</li>
+          <li>Amber</li>
+          <li>Mike</li>
+          </ul>
           <br></br>
 
           <h3>Details</h3>
           <iframe title="eventbrite" src="https://www.eventbrite.com/e/shaveday2022-for-ukrainian-crisis-relief-saturday-june-25-2-6pm-tickets-359537284697"></iframe>
 
-          <h3>We'll see you there!</h3>
+          <h3>Thanks for coming!</h3>
         </div>
     )
 }

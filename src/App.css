@@ -122,11 +122,12 @@ li {
   padding:3vh 0;
 }
 .donate-button-container {
+  margin: 0 auto;
   max-height:10vh;
   width:100%;
 }
 .donate-button-container > * {
-  margin:0;
+  margin:0 auto;
   width:60vw;
 }
 
@@ -353,6 +354,15 @@ label {
   .beard-name-jumbo {
     display: none;
   }
+  #donate-view {
+    height:50vh;
+  }
+  #post-event-amount {
+    border: 1px solid blue;
+  }
+  .fb-post-embeds iframe {
+    margin: 0 auto 2rem auto
+  }
 
 @media (min-width: 565px) {
   .announcement {
@@ -478,11 +488,11 @@ label {
   .donate-button-container {
     height:18vh;
     max-height:18vh;
-    width:15vw;
+    width:50vw;
   }
   .donate-button-container > * {
     margin:0 1vw;
-    width:15vw;
+    width:50vw;
   }
   .suggested-donation {
     max-width:15vw;

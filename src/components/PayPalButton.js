@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import {
   PayPalButtons,
-  usePayPalScriptReducer,
+  usePayPalScriptReducer
 } from "@paypal/react-paypal-js";
 
 export const ButtonWrapper = ({ currency, beardName }) => {
@@ -83,8 +83,7 @@ export const ButtonWrapper = ({ currency, beardName }) => {
         }
 
         fetch(url, options)
-            .then(res => res.json())
-            .then(res => console.log(res));
+            .then(res => res.json());
             }
         }
     />

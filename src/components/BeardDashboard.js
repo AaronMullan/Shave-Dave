@@ -1,15 +1,13 @@
 import React from "react";
-import { ButtonWrapper } from "./PayPalButton";
-import { PayPalScriptProvider } from "@paypal/react-paypal-js";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function BeardRow({ beard, topAmount, isLoading }) {
-  const suggestedAmount =
-    beard.amount === topAmount ? 50 : topAmount - beard.amount + 1;
-  const suggestedMessage =
-    beard.amount === topAmount
-      ? "$50 would help defend first!"
-      : `$${suggestedAmount} to take first!`;
+  // const suggestedAmount =
+  //   beard.amount === topAmount ? 50 : topAmount - beard.amount + 1;
+  // // const suggestedMessage =
+  // //   beard.amount === topAmount
+  // //     ? "$50 would help defend first!"
+  // //     : `$${suggestedAmount} to take first!`;
 
   return (
     <div className="beard-row" id={`beard-row-${beard.jsName}`}>
@@ -36,7 +34,7 @@ function BeardRow({ beard, topAmount, isLoading }) {
         <>
           <div className="icon-and-name">
             {beard.amount === topAmount ? 
-            <p id="leader-label">Current Leader</p>
+            <p id="leader-label">Winning Beardo</p>
             :
             <></>
             }
@@ -57,15 +55,7 @@ function BeardRow({ beard, topAmount, isLoading }) {
                 <i className="graph-amount">${beard.amount}</i>
               </div>
             </div>
-            <div className="donate-button-container">
-              <i className="suggested-donation">
-                Suggested donation: <br /> {suggestedMessage}{" "}
-              </i>
-              <ButtonWrapper
-                currency={"USD"}
-                beardName={beard.name}
-              />
-            </div>
+            
           </div>
         </>
       )}
@@ -78,24 +68,14 @@ export default function BeardDashboard({ beardsSortedByAmount, isLoading }) {
 
   return (
     <div className="beard-dashboard">
-      <PayPalScriptProvider
-        options={{
-          "client-id":
-            // "AQRFQThzOnupUWq17womr1CAjO5JEJTJLdiOJUnUdPXs_sIve6RL5sLGadGPGL6d1C1P6xri3520koiW", // danzhaas SB account
-            "AZI6hiDTy8KCl4usTyKrZd7Id9fTRy1xq_JLSbolEBMlRX98M8akex7Er5HZTHJy9A5qlcthld_p-RFV", // official SD prod acct
-          components: "buttons",
-          currency: "USD",
-        }}
-      >
-        {beardsSortedByAmount.map((beard) => (
-          <BeardRow
-            beard={beard}
-            topAmount={topAmount}
-            isLoading={isLoading}
-            key={beard.jsName}
-          />
-        ))}
-      </PayPalScriptProvider>
+      {beardsSortedByAmount.map((beard) => (
+        <BeardRow
+          beard={beard}
+          topAmount={topAmount}
+          isLoading={isLoading}
+          key={beard.jsName}
+        />
+      ))}
     </div>
   );
 }

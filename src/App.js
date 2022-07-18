@@ -3,6 +3,7 @@ import Header from "./components/Header"
 import DonateView from "./components/DonateView";
 import EventView from "./components/EventView";
 import AboutView from "./components/AboutView";
+import PhotosView from "./components/PhotosView";
 import ChartView from "./components/ChartView";
 import LandingView from "./components/LandingView";
 import SponsorsView from "./components/SponsorsView";
@@ -19,7 +20,8 @@ function App() {
       anchor:0,
       crab:0,
       clean:0,
-      dubStache:0
+      dubStache:0,
+      postEvent:0
   });
 
   function getBeardAmount (result, beardType) {
@@ -32,13 +34,13 @@ function App() {
               fetch("https://shave-dave-server.herokuapp.com/api/donations/")
               .then(res => res.json())
               .then(
-                  (result) => { 
-                      console.log(result);
+                  (result) => {
                       getAmounts({
                           clean: getBeardAmount(result, "Clean Shaven") + getBeardAmount(result, "Clean Shave"),
                           anchor: getBeardAmount(result, "Odesa Anchor"),
                           crab: getBeardAmount(result, "Bmore Crab"),
-                          dubStache: getBeardAmount(result, "Double Stache")
+                          dubStache: getBeardAmount(result, "Double Stache"),
+                          postEvent: getBeardAmount(result, "post-event")
                       });
                       updateLoading(false);
                   }
@@ -71,6 +73,7 @@ function App() {
             view === "event" ? <EventView /> : 
             view === "chart" ? <ChartView isLoading={isLoading} amounts={amounts} /> : 
             view === "sponsors" ? <SponsorsView /> : 
+            view === "photos" ? <PhotosView /> : 
             <AboutView /> }
           <EmailForm />
         </main>
