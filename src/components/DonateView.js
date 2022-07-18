@@ -1,16 +1,8 @@
 import React from "react";
-// import BeardDashboard from "./BeardDashboard";
 import GoalMeter from "./GoalMeter";
-import {
-    PayPalScriptProvider
-  } from "@paypal/react-paypal-js";
-import { ButtonWrapper } from "./PayPalButton";
-// import beardStyles from "../beards-array";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 export default function DonateView({isLoading, amounts}) {
-    // const beardsWithAmounts = beardStyles.map(beard => {return { ...beard, amount:amounts[beard.jsName]}});
-    // const beardsSortedByAmount = beardsWithAmounts.sort(function(a, b){return b.amount - a.amount});
     function getTotalAmount () {
         return amounts.anchor + amounts.crab + amounts.clean + amounts.dubStache + amounts.postEvent;
     }
@@ -35,23 +27,11 @@ export default function DonateView({isLoading, amounts}) {
             </div>
             <br />
             <div className="donate-field">
-                <PayPalScriptProvider
-                    options={{
-                    "client-id":
-                        // "AQRFQThzOnupUWq17womr1CAjO5JEJTJLdiOJUnUdPXs_sIve6RL5sLGadGPGL6d1C1P6xri3520koiW", // danzhaas SB account
-                        "AZI6hiDTy8KCl4usTyKrZd7Id9fTRy1xq_JLSbolEBMlRX98M8akex7Er5HZTHJy9A5qlcthld_p-RFV", // official SD prod acct
-                    components: "buttons",
-                    currency: "USD",
-                    }}
-                >
-                    <div className="donate-button-container">
-                        <h3>Enter an Amount to Donate</h3>
-                        <ButtonWrapper
-                            currency={"USD"}
-                            beardName="post-event"
-                        />
-                    </div>
-                </PayPalScriptProvider>
+                <form action="https://www.paypal.com/donate" method="post" target="_top">
+                    <input type="hidden" name="hosted_button_id" value="ZL3RASF47LK5S" />
+                    <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+                    <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+                </form>
             </div>
         </div>
     )
